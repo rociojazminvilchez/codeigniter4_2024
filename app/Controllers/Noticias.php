@@ -5,18 +5,17 @@ namespace App\Controllers;
 
 class Noticias extends BaseController{
     public function index(){
-
+        echo("veamos");
 
         return view('noticias');
-        
 
-       # return view('plantilla/header')
-        #.view('plantilla/footer');
+    }
+    public function show(){
+        echo("showshow");
+        return view('economia');
     }
 /*
-    public function show(){
-        return "nueva funcion";
-    }
+    
     
     EJEMPLO CON PARAMETROS
     public function cat($categoria, $id){

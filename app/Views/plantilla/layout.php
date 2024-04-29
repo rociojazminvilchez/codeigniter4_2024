@@ -23,15 +23,37 @@
       </a>
       </div>
 
-  
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="¿Qu&eacute est&aacute;s buscando?" aria-label="Search">
-                <button class="btn btn-outline-info" type="submit">BUSCAR</button>
-            </form>
-        </div>
-    </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="app\Views\economia.php">Economia</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Politica</a>
+        </li>
+    
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Turismo</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Deporte</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="¿Qu&eacute est&aacute;s buscando?" aria-label="Search">
+        <button class="btn btn-outline-info" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+
 
     <div class="grid-item" style="text-align: right; padding: 20px;">
         <div class="dropdown">
