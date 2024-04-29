@@ -1,12 +1,17 @@
 <?php
+
 namespace App\Controllers;
+
 
 class Noticias extends BaseController{
     public function index(){
-        echo ("hola"); 
+
+
+        return view('noticias');
         
-        return view('plantilla/header')
-        .view('plantilla/footer');
+
+       # return view('plantilla/header')
+        #.view('plantilla/footer');
     }
 /*
     public function show(){
