@@ -2,8 +2,7 @@
 
 namespace App\Controllers;
 
-
-class Noticias extends BaseController{
+/*class Noticias extends BaseController{
     public function index(){
         echo("veamos");
 
@@ -21,6 +20,7 @@ class Noticias extends BaseController{
     public function cat($categoria, $id){
         echo "Categoria:" . $categoria . "<br>";
         echo "ID:" . $id;
-    }*/
-}
+    }}
+
+*/
 ?>
