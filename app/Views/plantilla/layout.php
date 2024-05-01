@@ -18,7 +18,7 @@
 <nav>
     <div class="grid-container" >
       <div class="grid-item" style="text-align: left;">
-      <a href="index.php">
+      <a href="..\index.php">
         <img alt="logo" src="http://localhost/codeigniter4_2024/assets/imagenes/logo.png">
       </a>
       </div>
@@ -32,19 +32,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="app\Views\economia.php">Economia</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/economia')?>">Economia</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Politica</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/politica')?>">Politica</a>
         </li>
     
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Turismo</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/turismo')?>">Turismo</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Deporte</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/deporte')?>">Deporte</a>
         </li>
       </ul>
       <form class="d-flex" role="search">

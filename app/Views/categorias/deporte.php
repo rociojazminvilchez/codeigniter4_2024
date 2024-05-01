@@ -2,6 +2,6 @@
 
 <?php echo $this->section('contenido');?>
 <body>
-    <h2> POLITICA </h2>
+    <h2> DEPORTE </h2>
 </body>
 <?php echo $this->endSection();?>

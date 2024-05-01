@@ -23,7 +23,7 @@
 
       <form class="form" action="bd\BDusuario.php" method="POST">
         <p style="text-align:right;">
-          <a href="..\index.php">
+          <a href="<?php echo base_url('../index.php')?>">
             <button type="button" class="btn-close" aria-label="Close">
             </button>
           </a>
@@ -40,7 +40,7 @@
 
             <input type="submit" name="ingresar" value="Ingresar"><br><br>
 
-            <a href="recuperarcontra.php"> ¿Olvidaste tu contrase&ntildea? </a>
+            <a href="<?php echo base_url('formularios/recuperar_contra')?>"> ¿Olvidaste tu contrase&ntildea? </a>
         </form>
         <?php 
             //include("bd\BDusuarios.php");

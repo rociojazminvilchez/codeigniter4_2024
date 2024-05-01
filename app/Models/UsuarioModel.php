@@ -4,6 +4,12 @@ use CodeIgniter\Model;
 
 class UsuarioModel extends Model{ 
     
+    public function obtenerUsuario($data){
+      $Usuario = $this->db->table('ingresousuario');
+      $Usuario->where($data);
+      return $Usuario->get()->getResultArray();
+    }
+
 protected $table = 'ingresousuario'; 
 protected $primaryKey = 'correo';
 protected $useAutoIncrement = false; 
