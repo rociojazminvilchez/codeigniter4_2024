@@ -18,7 +18,7 @@
 <nav>
     <div class="grid-container" >
       <div class="grid-item" style="text-align: left;">
-      <a href="..\index.php">
+      <a href="<?php echo base_url('/../index.php')?>">
         <img alt="logo" src="http://localhost/codeigniter4_2024/assets/imagenes/logo.png">
       </a>
       </div>
@@ -68,13 +68,17 @@
               ?>
               <li><a class="dropdown-item"> <?php echo($_SESSION['user']) ?> </a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="formularios\registroNoticia.php">Registrar noticia</a></li>
+              
               <li><a class="dropdown-item" href="historial.php">Historial</a></li>
               <li><a class="dropdown-item" href="cerrarsesion.php">Cerrar sesi&oacuten</a></li>
               <?php
             }else{
               ?>
             <li><a class="dropdown-item" href="<?php echo base_url('/../ingreso')?>">Iniciar sesión</a></li>
+            <li><a class="dropdown-item" href="./formularios/crear_noticia">Crear noticia</a></li>
+            <li><a class="dropdown-item" href="./panel/panel">Panel</a></li>
+            <li><a class="dropdown-item" href="../panel/historial">Historial</a></li>
+
             <!--
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="administrador\iniciar_admin.php">Administrador</a></li>
