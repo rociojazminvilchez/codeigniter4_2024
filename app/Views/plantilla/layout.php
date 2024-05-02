@@ -47,10 +47,12 @@
           <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/deporte')?>">Deporte</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
+      <!--
+<form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="¿Qu&eacute est&aacute;s buscando?" aria-label="Search">
         <button class="btn btn-outline-info" type="submit">Buscar</button>
       </form>
+-->
     </div>
   </div>
 

@@ -43,7 +43,7 @@ class Home extends BaseController
         }
     }    
 
-    public function recuperar(){
+    public function recuperar_contra(){
         return view('formularios/recuperar_contra');
     }
 
@@ -63,5 +63,29 @@ class Home extends BaseController
         return view('/categorias/deporte');
     }
 
-    
+#Noticia
+   public function crear_noticia(){
+        return view('/formularios/crear_noticia');
+    }
+
+    public function historial(){
+        return view('/panel/historial');
+    }
+
+    public function panel(){
+        return view('/panel/panel');
+    }
+
+    public function borrador(){
+        return view('/panel/borrador');
+    }
+
+    public function correcion(){
+        return view('/panel/correcion');
+    }
+
+    public function validar(){
+        return view('/panel/validar');
+    }
+
 }
