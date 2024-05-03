@@ -49,9 +49,7 @@ class Noticias extends BaseController
             'descripcion'           => trim($post['descripcion']),
             'estado' => $post['estado'],
             'categoria'         => $post['categoria'],
-            'img' =>
-    
-    
+            
         ]);
 
         return redirect()->to('noticias');
