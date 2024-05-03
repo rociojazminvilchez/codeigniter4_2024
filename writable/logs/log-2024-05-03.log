@@ -1,0 +1,1029 @@
+INFO - 2024-05-03 00:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 00:12:33 --> ErrorException: Undefined variable $correo
+in APPPATH\Views\formularios\crear_noticia.php on line 44.
+ 1 APPPATH\Views\formularios\crear_noticia.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $correo', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\formularios\\crear_noticia.php', 44)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\formularios\\crear_noticia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/formularios/crear_noticia', [], true)
+ 5 APPPATH\Controllers\Home.php(68): view('/formularios/crear_noticia')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->crear_noticia()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 00:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 00:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 01:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 01:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 01:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 01:02:59 --> Error: Call to undefined function set_value()
+in APPPATH\Views\formularios\crear_noticia.php on line 17.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/formularios/crear_noticia', [], true)
+ 4 APPPATH\Controllers\Home.php(68): view('/formularios/crear_noticia')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->crear_noticia()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 01:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 01:03:35 --> Error: Call to undefined function set_value()
+in APPPATH\Views\formularios\crear_noticia.php on line 17.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/formularios/crear_noticia', [], true)
+ 4 APPPATH\Controllers\Home.php(68): view('/formularios/crear_noticia')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->crear_noticia()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 01:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 01:04:20 --> Error: Call to undefined function set_value()
+in APPPATH\Views\formularios\crear_noticia.php on line 23.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/formularios/crear_noticia', [], true)
+ 4 APPPATH\Controllers\Home.php(68): view('/formularios/crear_noticia')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->crear_noticia()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 01:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 01:04:21 --> Error: Call to undefined function set_value()
+in APPPATH\Views\formularios\crear_noticia.php on line 23.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/formularios/crear_noticia', [], true)
+ 4 APPPATH\Controllers\Home.php(68): view('/formularios/crear_noticia')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->crear_noticia()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 01:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 01:05:54 --> Error: Call to undefined function set_value()
+in APPPATH\Views\formularios\crear_noticia.php on line 23.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/formularios/crear_noticia', [], true)
+ 4 APPPATH\Controllers\Home.php(68): view('/formularios/crear_noticia')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->crear_noticia()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 01:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 01:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 01:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 01:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 01:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 01:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 01:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 17:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 17:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 17:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 17:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 17:30:15 --> CodeIgniter\Validation\Exceptions\ValidationException: "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Noticias.php(59): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 17:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 17:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 17:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 17:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 17:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 17:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 17:58:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "plantilla.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('plantilla.php')
+ 2 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('plantilla', [], true)
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 4 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 17:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 17:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 17:59:06 --> Error: Class "App\Models\DepartamentosModel" not found
+in APPPATH\Controllers\Empleados.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->new()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 18:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 18:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 18:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 18:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 18:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 18:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 18:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 18:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 18:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 20:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 20:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 20:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 20:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 20:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-03 20:47:33 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Empleados.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Empleados->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-03 20:47:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Empleados.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 20:47:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'53455\', \'fdsf\', \'2024-05-17\', \'534534\', \'rocio@gmail.com\', \'2024-05-03 20:47:33\', \'2024-05-03 20:47:33\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'53455\', \'fdsf\', \'2024-05-17\', \'534534\', \'rocio@gmail.com\', \'2024-05-03 20:47:33\', \'2024-05-03 20:47:33\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Empleados.php(46): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 20:47:33 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'53455\', \'fdsf\', \'2024-05-17\', \'534534\', \'rocio@gmail.com\', \'2024-05-03 20:47:33\', \'2024-05-03 20:47:33\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'53455\', \'fdsf\', \'2024-05-17\', \'534534\', \'rocio@gmail.com\', \'2024-05-03 20:47:33\', \'2024-05-03 20:47:33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'53455\', \'fdsf\', \'2024-05-17\', \'534534\', \'rocio@gmail.com\', \'2024-05-03 20:47:33\', \'2024-05-03 20:47:33\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Empleados.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 20:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-03 20:53:37 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Empleados.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Empleados->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-03 20:53:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Empleados.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 20:53:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'53455\', \'fdsf\', \'2024-05-17\', \'534534\', \'rocio@gmail.com\', \'2024-05-03 20:53:37\', \'2024-05-03 20:53:37\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'53455\', \'fdsf\', \'2024-05-17\', \'534534\', \'rocio@gmail.com\', \'2024-05-03 20:53:37\', \'2024-05-03 20:53:37\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Empleados.php(40): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 20:53:37 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'53455\', \'fdsf\', \'2024-05-17\', \'534534\', \'rocio@gmail.com\', \'2024-05-03 20:53:37\', \'2024-05-03 20:53:37\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'53455\', \'fdsf\', \'2024-05-17\', \'534534\', \'rocio@gmail.com\', \'2024-05-03 20:53:37\', \'2024-05-03 20:53:37\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'53455\', \'fdsf\', \'2024-05-17\', \'534534\', \'rocio@gmail.com\', \'2024-05-03 20:53:37\', \'2024-05-03 20:53:37\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Empleados.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 20:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 20:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 20:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-03 20:55:01 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Empleados.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Empleados->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-03 20:55:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Empleados.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 20:55:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'432423\', \'rwer\', \'2024-05-17\', \'53242\', \'fsdfs@gmail.com\', \'2024-05-03 20:55:01\', \'2024-05-03 20:55:01\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'432423\', \'rwer\', \'2024-05-17\', \'53242\', \'fsdfs@gmail.com\', \'2024-05-03 20:55:01\', \'2024-05-03 20:55:01\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Empleados.php(40): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 20:55:01 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'432423\', \'rwer\', \'2024-05-17\', \'53242\', \'fsdfs@gmail.com\', \'2024-05-03 20:55:01\', \'2024-05-03 20:55:01\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'432423\', \'rwer\', \'2024-05-17\', \'53242\', \'fsdfs@gmail.com\', \'2024-05-03 20:55:01\', \'2024-05-03 20:55:01\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'432423\', \'rwer\', \'2024-05-17\', \'53242\', \'fsdfs@gmail.com\', \'2024-05-03 20:55:01\', \'2024-05-03 20:55:01\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Empleados.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 20:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-03 20:59:08 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Empleados.php(40): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Empleados->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-03 20:59:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Empleados.php(40): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 20:59:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'432423\', \'rwer\', \'2024-05-17\', \'53242\', \'fsdfs@gmail.com\', \'2024-05-03 20:59:08\', \'2024-05-03 20:59:08\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'432423\', \'rwer\', \'2024-05-17\', \'53242\', \'fsdfs@gmail.com\', \'2024-05-03 20:59:08\', \'2024-05-03 20:59:08\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Empleados.php(40): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 20:59:08 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'432423\', \'rwer\', \'2024-05-17\', \'53242\', \'fsdfs@gmail.com\', \'2024-05-03 20:59:08\', \'2024-05-03 20:59:08\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'432423\', \'rwer\', \'2024-05-17\', \'53242\', \'fsdfs@gmail.com\', \'2024-05-03 20:59:08\', \'2024-05-03 20:59:08\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'432423\', \'rwer\', \'2024-05-17\', \'53242\', \'fsdfs@gmail.com\', \'2024-05-03 20:59:08\', \'2024-05-03 20:59:08\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Empleados.php(40): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:01:49 --> ErrorException: Undefined variable $empleados
+in APPPATH\Views\empleados\index.php on line 23.
+ 1 APPPATH\Views\empleados\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleados', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(15): view('empleados/index')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:03:31 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 26.
+ 1 APPPATH\Views\empleados\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(17): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:04:20 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 26.
+ 1 APPPATH\Views\empleados\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(17): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:04:40 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 26.
+ 1 APPPATH\Views\empleados\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(17): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:05:10 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 27.
+ 1 APPPATH\Views\empleados\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(17): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:05:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:05:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 25.
+ 1 APPPATH\Views\empleados\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(17): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:06:58 --> BadMethodCallException: Call to undefined method App\Models\EmpleadosModel::empleadosDepartamento
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Empleados.php(16): CodeIgniter\Model->__call('empleadosDepartamento', [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:07:42 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 25.
+ 1 APPPATH\Views\empleados\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:09:00 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 25.
+ 1 APPPATH\Views\empleados\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:09:02 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 25.
+ 1 APPPATH\Views\empleados\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:10:13 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 25.
+ 1 APPPATH\Views\empleados\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:10:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 25.
+ 1 APPPATH\Views\empleados\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:10:20 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 25.
+ 1 APPPATH\Views\empleados\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-03 21:10:43 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Empleados.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Empleados->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-03 21:10:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Empleados.php(43): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:10:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'534534\', \'gdfgdf\', \'2024-05-17\', \'4534534\', \'rocio@jamzin.com\', \'2024-05-03 21:10:43\', \'2024-05-03 21:10:43\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'534534\', \'gdfgdf\', \'2024-05-17\', \'4534534\', \'rocio@jamzin.com\', \'2024-05-03 21:10:43\', \'2024-05-03 21:10:43\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Empleados.php(43): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:10:43 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'534534\', \'gdfgdf\', \'2024-05-17\', \'4534534\', \'rocio@jamzin.com\', \'2024-05-03 21:10:43\', \'2024-05-03 21:10:43\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'534534\', \'gdfgdf\', \'2024-05-17\', \'4534534\', \'rocio@jamzin.com\', \'2024-05-03 21:10:43\', \'2024-05-03 21:10:43\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (\'534534\', \'gdfgdf\', \'2024-05-17\', \'4534534\', \'rocio@jamzin.com\', \'2024-05-03 21:10:43\', \'2024-05-03 21:10:43\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`clave`, `nombre`, `fecha_nacimiento`, `telefono`, `email`, `created_at`, `updated_at`) VALUES (:clave:, :nombre:, :fecha_nacimiento:, :telefono:, :email:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Empleados.php(43): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:11:14 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 25.
+ 1 APPPATH\Views\empleados\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:16:02 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 25.
+ 1 APPPATH\Views\empleados\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:16:47 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 26.
+ 1 APPPATH\Views\empleados\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:16:49 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 26.
+ 1 APPPATH\Views\empleados\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:19:46 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 26.
+ 1 APPPATH\Views\empleados\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:20:25 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 27.
+ 1 APPPATH\Views\empleados\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:20:44 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 26.
+ 1 APPPATH\Views\empleados\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:24:15 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 26.
+ 1 APPPATH\Views\empleados\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:24:16 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\empleados\index.php on line 26.
+ 1 APPPATH\Views\empleados\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\empleados\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('empleados/index', [], true)
+ 5 APPPATH\Controllers\Empleados.php(18): view('empleados/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:33:08 --> CodeIgniter\Validation\Exceptions\ValidationException: "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('img', 'img', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Noticias.php(38): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:34:00 --> CodeIgniter\Validation\Exceptions\ValidationException: "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('img', 'img', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Noticias.php(38): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:34:23 --> CodeIgniter\Validation\Exceptions\ValidationException: "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('img', 'img', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Noticias.php(38): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-03 21:35:53 --> CodeIgniter\Validation\Exceptions\ValidationException: "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('img', 'img', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Noticias.php(38): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-03 21:37:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`)) in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Noticias.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Noticias->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-03 21:37:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:37:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:37:45\', \'2024-05-03 21:37:45\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:37:45\', \'2024-05-03 21:37:45\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:37:45 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:37:45\', \'2024-05-03 21:37:45\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:37:45\', \'2024-05-03 21:37:45\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:37:45\', \'2024-05-03 21:37:45\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-03 21:39:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`)) in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Noticias.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Noticias->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-03 21:39:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:39:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:39:35\', \'2024-05-03 21:39:35\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:39:35\', \'2024-05-03 21:39:35\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:39:35 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:39:35\', \'2024-05-03 21:39:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:39:35\', \'2024-05-03 21:39:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:39:35\', \'2024-05-03 21:39:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-03 21:42:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`)) in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Noticias.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Noticias->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-03 21:42:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:42:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:42:17\', \'2024-05-03 21:42:17\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:42:17\', \'2024-05-03 21:42:17\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:42:17 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:42:17\', \'2024-05-03 21:42:17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:42:17\', \'2024-05-03 21:42:17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:42:17\', \'2024-05-03 21:42:17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-03 21:42:30 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`)) in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Noticias.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Noticias->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-03 21:42:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:42:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:42:30\', \'2024-05-03 21:42:30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:42:30\', \'2024-05-03 21:42:30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:42:30 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:42:30\', \'2024-05-03 21:42:30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:42:30\', \'2024-05-03 21:42:30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:42:30\', \'2024-05-03 21:42:30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-03 21:43:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`)) in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Noticias.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Noticias->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-03 21:43:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:43:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:43:23\', \'2024-05-03 21:43:23\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:43:23\', \'2024-05-03 21:43:23\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-03 21:43:23 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`empresatecnologica`.`noticias`, CONSTRAINT `noticias_ibfk_1` FOREIGN KEY (`correo_usuario`) REFERENCES `ingresousuario` (`correo`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:43:23\', \'2024-05-03 21:43:23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:43:23\', \'2024-05-03 21:43:23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (\'fsdfs\', \'fsdf\', \'borrador\', \'politica\', \'2024-05-03 21:43:23\', \'2024-05-03 21:43:23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `noticias` (`titulo`, `descripcion`, `estado`, `categoria`, `fecha`, `fecha_modificada`) VALUES (:titulo:, :descripcion:, :estado:, :categoria:, :fecha:, :fecha_modificada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Noticias.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-03 21:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 21:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 22:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 22:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 22:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 22:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 22:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 22:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 22:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-03 22:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

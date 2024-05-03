@@ -75,7 +75,7 @@
             }else{
               ?>
             <li><a class="dropdown-item" href="<?php echo base_url('/../ingreso')?>">Iniciar sesión</a></li>
-            <li><a class="dropdown-item" href="./formularios/crear_noticia">Crear noticia</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('/./formularios/crear_noticia')?>">Crear noticia</a></li>
             <li><a class="dropdown-item" href="./panel/panel">Panel</a></li>
             <li><a class="dropdown-item" href="../panel/historial">Historial</a></li>
 

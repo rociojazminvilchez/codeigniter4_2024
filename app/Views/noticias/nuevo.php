@@ -9,7 +9,7 @@
     </div>
 <?php } ?>
 
-    <form class="form" action="<?php echo base_url('index.php')?>" method="POST" enctype="multipart/form-data">
+    <form class="form" action="<?= base_url('noticias'); ?>" method="POST" enctype="multipart/form-data">
     <p style="text-align:right;">
       <a href="<?php echo base_url('../index.php')?>">
         <button type="button" class="btn-close" aria-label="Close"></button>

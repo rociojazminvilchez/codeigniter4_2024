@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 
 class NoticiasModel extends Model{ 
     
-protected $table = 'registronoticia'; 
+protected $table = 'noticias'; 
 protected $primaryKey = 'id';
 protected $useAutoIncrement = true; 
 protected $returnType = 'array'; //tambien se puede usar como object

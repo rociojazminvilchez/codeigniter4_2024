@@ -2,25 +2,75 @@
 
 namespace App\Controllers;
 
-/*class Noticias extends BaseController{
-    public function index(){
-        echo("veamos");
+use App\Controllers\BaseController;
 
-        return view('noticias');
+use App\Models\NoticiasModel;
 
+class Noticias extends BaseController
+{
+
+    public function index()
+    {
+        $noticiasModel = new NoticiasModel();
+        return view('noticias/index');
     }
-    public function show(){
-        echo("showshow");
-        return view('economia');
+
+    public function show($id = null)
+    {
+        //
     }
-/*
+
+    public function new()
+    {
+        return view('noticias/nuevo');
+    }
+
+    public function create()
+    {
+        $reglas = [
+            'titulo'           => 'required|min_length[3]',
+            'descripcion' => 'required',
+            'estado'         => 'required',
+            'categoria'     => 'required',
+            'img'  => '',
+            
+        ];
+
+        if (!$this->validate($reglas)) {
+            return redirect()->back()->withInput()->with('error', $this->validator->listErrors());
+        }
+       
+
+        $post = $this->request->getPost(['titulo', 'descripcion', 'estado', 'categoria']);
+
+        $noticiasModel = new NoticiasModel();
+        $noticiasModel->insert([
+            'titulo'            => trim($post['titulo']),
+            'descripcion'           => trim($post['descripcion']),
+            'estado' => $post['estado'],
+            'categoria'         => $post['categoria'],
+            'img' =>
     
     
-    EJEMPLO CON PARAMETROS
-    public function cat($categoria, $id){
-        echo "Categoria:" . $categoria . "<br>";
-        echo "ID:" . $id;
-    }}
+        ]);
 
-*/
-?>
+        return redirect()->to('noticias');
+    }
+
+    public function edit($id = null)
+    {
+        //
+    }
+
+
+    public function update($id = null)
+    {
+        //
+    }
+
+
+    public function delete($id = null)
+    {
+        //
+    }
+}

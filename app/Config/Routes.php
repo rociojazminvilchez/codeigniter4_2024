@@ -26,8 +26,12 @@ $routes->get('/panel/borrador', 'Home::borrador');
 $routes->get('/panel/correcion', 'Home::correcion');
 
 
-//$routes->get('productos/monitores', 'Productos::monitores');
+$routes->get('formularios/crear_noticia','Noticias::new');
 
-/*Ejemplo ruta con parametros string - num
-$routes->get('/noticias/(:alpha)/(:num)','Noticias::cat/$1/$2');
-*/
+
+$routes->post('/', 'Home::index');
+
+//EJEMPLO
+$routes->resource('empleados', ['placeholder' => '(:num)', 'except' => 'show']);
+
+$routes->resource('noticias', ['placeholder' => '(:num)', 'except' => 'show']);
