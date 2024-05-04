@@ -8,8 +8,13 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get('/noticias/ingreso', 'Noticias::ingreso');
 $routes->post('/noticias/login', 'Noticias::login');
-
+$routes->get('/', 'Noticias::salir');
 $routes->get('/noticias/recuperar_contra', 'Noticias::recuperar');
+
+#noticia
+$routes->get('/noticias/historial', 'Noticias::historial');
+$routes->get('/noticias/editar', 'Noticias::editar');
+$routes->get('/noticias/editar2', 'Noticias::edit');
 
 #categorias
 $routes->get('/categorias/economia', 'Noticias::economia');
@@ -17,10 +22,10 @@ $routes->get('/categorias/turismo', 'Noticias::turismo');
 $routes->get('/categorias/deporte', 'Noticias::deporte');
 $routes->get('/categorias/politica', 'Noticias::politica');
 
-#noticia
 
-$routes->get('/panel/historial', 'Noticias::historial');
-$routes->get('/panel/panel', 'Noticias::panel');
+
+
+#$routes->get('/panel/panel', 'Noticias::panel');
 $routes->get('/panel/validar', 'Noticias::validar');
 $routes->get('/panel/borrador', 'Noticias::borrador');
 $routes->get('/panel/correcion', 'Noticias::correcion');

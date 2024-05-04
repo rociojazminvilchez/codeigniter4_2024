@@ -95,7 +95,16 @@ class Noticias extends BaseController
         return redirect()->to('noticias');
     }
 
-    public function edit($id = null)
+    //EDITAR
+    public function editar(){
+        $noticiasModel = new NoticiasModel();
+        $resultado = $noticiasModel->findAll();
+
+        $data = ['noticias' => $resultado];
+        return view('noticias/editar',$data);
+    }
+
+    public function edit($id = null )
     {
         if ($id == null) {
             return redirect()->route('noticias');
@@ -104,7 +113,7 @@ class Noticias extends BaseController
         $noticiasModel = new NoticiasModel();
         $data['not'] = $noticiasModel->find($id);
 
-        return view('noticias/editar', $data);
+        return view('noticias/editar2', $data);
     }
 
     public function mostrar()
@@ -128,18 +137,9 @@ class Noticias extends BaseController
          
         
         if(count($data) > 0){
-            /*MANEJO DE SESION
-            $dat = [
-                "usuario" => $data[0]['correo'],
-                "contra" => $data[0]['contra']
-            ];
+           // MANEJO DE SESION
             $session = session();
-            $session -> set($dat);
-            
-            print_r($session);
-            
-            exit;
-            */
+            $session -> set('usuario',$usuario);
 
             return redirect()->to('noticias');
         }else{
@@ -147,11 +147,11 @@ class Noticias extends BaseController
             return view('noticias/ingreso');
         }
     }
-
+//Cerrar sesion
     public function salir() {
 		$session = session();
-		$session->destroy();
-		return redirect()->to(base_url('/'));
+        $session->destroy();
+        return redirect()->to(base_url('noticias'));
 	}
 
     public function update($id = null)
@@ -191,13 +191,8 @@ class Noticias extends BaseController
     }
 
 #Noticia
-
     public function historial(){
-        return view('/panel/historial');
-    }
-
-    public function panel(){
-        return view('/panel/panel');
+        return view('/noticias/historial');
     }
 
     public function borrador(){

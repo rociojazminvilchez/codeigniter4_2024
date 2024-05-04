@@ -66,25 +66,21 @@
           </button>
         <ul class="dropdown-menu dropdown-menu-dark">
           <?php             
-            if(isset($_SESSION['user'])){
-              ?>
-              <li><a class="dropdown-item"> <?php echo($_SESSION['user']) ?> </a></li>
+          if (isset($_SESSION['usuario'])) {
+            ?>
+              <li><a class="dropdown-item"> <?php  ?> </a></li>
               <li><hr class="dropdown-divider"></li>
-              
+              <li><a class="dropdown-item" href="<?php echo base_url('noticias/new')?>">Crear noticia</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('noticias/mostrar')?>">Panel</a></li>
+              <!--
               <li><a class="dropdown-item" href="historial.php">Historial</a></li>
-              <li><a class="dropdown-item" href="cerrarsesion.php">Cerrar sesi&oacuten</a></li>
+            -->
+              <li><a class="dropdown-item" href="<?php echo base_url('noticias/salir')?>">Cerrar sesi&oacuten</a></li>
               <?php
             }else{
               ?>
             <li><a class="dropdown-item" href="<?= base_url('/noticias/ingreso'); ?>">Iniciar sesión</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url('noticias/new')?>">Crear noticia</a></li>
-            <li><a class="dropdown-item" href="./panel/panel">Panel</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url('noticias/mostrar')?>">Mostrar</a></li>
-
-            <!--
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="administrador\iniciar_admin.php">Administrador</a></li>
-            -->
           <?php
           }
           ?>         
