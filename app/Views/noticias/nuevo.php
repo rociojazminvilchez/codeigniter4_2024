@@ -11,7 +11,7 @@
 
     <form class="form" action="<?= base_url('noticias'); ?>" method="POST" enctype="multipart/form-data">
     <p style="text-align:right;">
-      <a href="<?php echo base_url('../index.php')?>">
+      <a href="<?php echo base_url('noticias')?>">
         <button type="button" class="btn-close" aria-label="Close"></button>
       </a>
     </p>
@@ -45,8 +45,9 @@
           </select><br><br>
 
         Imagen:<br>  
-          <input type="file" name="img"><br>
-        
+          <input type="file" name="img" id='img' accept="image/jpeg,image/png"><br>
+
+        <!-- Correo oculto-->
           <input type="hidden" name="Email" value="<?php ?>">
 
 

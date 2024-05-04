@@ -3,7 +3,8 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class NoticiasModel extends Model{ 
-    
+ 
+      
 protected $table = 'noticias'; 
 protected $primaryKey = 'id';
 protected $useAutoIncrement = true; 

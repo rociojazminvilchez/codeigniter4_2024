@@ -1,19 +1,19 @@
-
-<br>
 <div class="container text-center">
   <div class="row">
+    
     <div class="col">
-      <button type="button" class="btn btn-outline-primary">Left</button>
+      <a class="btn btn-outline-primary" href="<?php echo base_url('/panel/borrador')?>" role="button">Borrador</a>
     </div>
     <div class="col">
-    <button type="button" class="btn btn-outline-primary">Middle</button>
+        <a class="btn btn-outline-primary" href="<?php echo base_url('/panel/validar')?>" role="button">Validar</a>
     </div>
     <div class="col">
-    <button type="button" class="btn btn-outline-primary">Middle</button>
+    <a class="btn btn-outline-primary" href="<?php echo base_url('/panel/correcion')?>" role="button">Correci&oacuten</a>
     </div>
   </div>
 </div>
 <body>
-<?php echo $this->renderSection("panelcontenido");?>
+
+<?php echo $this->renderSection("contenido");?>
 
 </body>

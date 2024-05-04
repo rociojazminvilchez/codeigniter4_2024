@@ -6,6 +6,7 @@ use App\Models\UsuarioModel;
 
 class Home extends BaseController
 {
+    /*
     public function index()
     {
        $mensaje = session('mensaje');
@@ -87,5 +88,5 @@ class Home extends BaseController
     public function validar(){
         return view('/panel/validar');
     }
-
+*/
 }

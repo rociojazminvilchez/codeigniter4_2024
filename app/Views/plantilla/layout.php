@@ -18,7 +18,7 @@
 <nav>
     <div class="grid-container" >
       <div class="grid-item" style="text-align: left;">
-      <a href="<?php echo base_url('/../index.php')?>">
+      <a href="<?= base_url('noticias'); ?>">
         <img alt="logo" src="http://localhost/codeigniter4_2024/assets/imagenes/logo.png">
       </a>
       </div>
@@ -74,10 +74,10 @@
               <?php
             }else{
               ?>
-            <li><a class="dropdown-item" href="<?php echo base_url('/../ingreso')?>">Iniciar sesión</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url('/./formularios/crear_noticia')?>">Crear noticia</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('/noticias/ingreso'); ?>">Iniciar sesión</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('noticias/new')?>">Crear noticia</a></li>
             <li><a class="dropdown-item" href="./panel/panel">Panel</a></li>
-            <li><a class="dropdown-item" href="../panel/historial">Historial</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('noticias/mostrar')?>">Mostrar</a></li>
 
             <!--
             <li><hr class="dropdown-divider"></li>

@@ -1,10 +1,8 @@
-<?php echo $this->extend('plantilla'); ?>
+<?php echo $this->extend('plantilla\layout');?>
 
-<?= $this->section('contenido'); ?>
+<?php echo $this->section('contenido');?>
 
-<h3 class="my-3" id="titulo">Noticias</h3>
-
-<a href="<?= base_url('empleados/new'); ?>" class="btn btn-success">Agregar</a>
+<h3 class="my-3" id="titulo"> Editar noticia </h3> 
 
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
@@ -16,23 +14,27 @@
             <th scope="col">Categoria</th>
             <th scope="col">Imagen</th>
             <th scope="col">Usuario</th>
+            <th scope="col"></th>
+
         </tr>
     </thead>
 
     <tbody>
 
-        <?php foreach ($empleados as $empleado) : ?>
+        <?php foreach ($noticias as $not) : ?>
 
             <tr>
-                <td><?= $empleado['clave']; ?></td>
-                <td><?= $empleado['nombre']; ?></td>
-                <td><?= $empleado['telefono']; ?></td>
-                <td><?= $empleado['email']; ?></td>
-                
+                <td><?= $not['id']; ?></td>
+                <td><?= $not['titulo']; ?></td>
+                <td><?= $not['descripcion']; ?></td>
+                <td><?= $not['estado']; ?></td>
+                <td><?= $not['categoria']; ?></td>
+                <td><?= $not['img']; ?></td>
+                <td><?= $not['usuario']; ?></td>
                 <td>
-                    <a href="<?= base_url('empleados/' . $empleado['id'] . '/edit'); ?>" class="btn btn-warning btn-sm me-2">Editar</a>
+                    <a href="" class="btn btn-warning btn-sm me-2">Borrador</a>
 
-                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#eliminaModal" data-bs-url="<?= base_url('empleados/' . $empleado['id']); ?>">Eliminar</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#eliminaModal" data-bs-url="">Validar</button>
                 </td>
             </tr>
         <?php endforeach; ?>
