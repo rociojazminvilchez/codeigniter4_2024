@@ -5,7 +5,6 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-#$routes->get('/', 'Home::index');
 
 $routes->get('/noticias/ingreso', 'Noticias::ingreso');
 $routes->get('/noticias/recuperar_contra', 'Noticias::recuperar');
@@ -23,10 +22,6 @@ $routes->get('/panel/panel', 'Noticias::panel');
 $routes->get('/panel/validar', 'Noticias::validar');
 $routes->get('/panel/borrador', 'Noticias::borrador');
 $routes->get('/panel/correcion', 'Noticias::correcion');
-
-
-
-#$routes->post('/', 'Home::index');
 
 $routes->get('/noticias/mostrar', 'Noticias::mostrar');
 
