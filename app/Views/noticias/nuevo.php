@@ -4,6 +4,7 @@
     <body>
 
     <?php if (session()->getFlashdata('error') !== null) { ?>
+      
     <div class="alert alert-danger">
         <?= session()->getFlashdata('error'); ?>
     </div>
