@@ -7,6 +7,7 @@ use App\Controllers\BaseController;
 use App\Models\NoticiasModel;
 
 use App\Models\IngresoModel;
+use CodeIgniter\Exceptions\AlertError;
 
 class Noticias extends BaseController
 {
@@ -14,7 +15,6 @@ class Noticias extends BaseController
 
     public function index()
     {
-        $session = \Config\Services::session();
         
         $noticiasModel = new NoticiasModel();
         $resultado = $noticiasModel->findAll();
@@ -36,7 +36,6 @@ class Noticias extends BaseController
 
     public function create()
     {
-        $correo = $_SESSION['usuario'];
         $reglas = [
             'titulo'           => 'required|min_length[3]',
             'descripcion' => 'required',
@@ -50,6 +49,7 @@ class Noticias extends BaseController
         }
 
         #archivos
+        /*
         $file = $this->request->getFile('img');
         
         if(!$file->isValid()){
@@ -77,6 +77,7 @@ class Noticias extends BaseController
             $ruta = ROOTPATH. 'public/imagenes';
             $file->move($ruta);
         }
+        */
      
         $post = $this->request->getPost(['titulo', 'descripcion', 'estado', 'categoria']);
 
@@ -87,8 +88,8 @@ class Noticias extends BaseController
             'descripcion'           => trim($post['descripcion']),
             'estado' => $post['estado'],
             'categoria'         => $post['categoria'],
-            'img' => $file,
-            'usuario' => $correo,
+            #'img' => $file,
+            
         ]);
 
         return redirect()->to('noticias');
@@ -115,15 +116,43 @@ class Noticias extends BaseController
         return view('noticias/mostrar' ,$data);
     }
      
-    public function mostrar_usuario()
+    public function login()
     {
+        $usuario = $this->request->getPost('usuario');    
+        $contra = $this->request->getPost('contra');
+
+       
         $ingresoModel = new IngresoModel();
-        $resultado = $ingresoModel->findAll();
+        //$data = $ingresoModel->obtenerUsuario($usuario, $contra);  
+        $data = $ingresoModel->obtenerUsuario(['correo' => $usuario,'contra' => $contra]);
+         
+        
+        if(count($data) > 0){
+            /*MANEJO DE SESION
+            $dat = [
+                "usuario" => $data[0]['correo'],
+                "contra" => $data[0]['contra']
+            ];
+            $session = session();
+            $session -> set($dat);
+            
+            print_r($session);
+            
+            exit;
+            */
 
-        $data = ['ingreso' => $resultado];
-
-      return view('noticias/index',$data);
+            return redirect()->to('noticias');
+        }else{
+            echo("Usuario o contraseña incorrecta");
+            return view('noticias/ingreso');
+        }
     }
+
+    public function salir() {
+		$session = session();
+		$session->destroy();
+		return redirect()->to(base_url('/'));
+	}
 
     public function update($id = null)
     {

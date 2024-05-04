@@ -7,6 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/noticias/ingreso', 'Noticias::ingreso');
+$routes->post('/noticias/login', 'Noticias::login');
+
 $routes->get('/noticias/recuperar_contra', 'Noticias::recuperar');
 
 #categorias

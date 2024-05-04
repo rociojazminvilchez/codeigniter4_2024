@@ -4,8 +4,10 @@
     <body>
 
     <?php
+    /*
     $session = \Config\Services::session($config);
     $correo = $_SESSION['usuario'];
+    */
     if (session()->getFlashdata('error') !== null) { ?>
 
     <div class="alert alert-danger">

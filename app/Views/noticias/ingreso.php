@@ -3,25 +3,8 @@
 <?php echo $this->section('contenido');?>
 
     <body>
-       <?php
-            $emailError=$contraError="";
-
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-                $Email = $_POST['Email'];
-                $Contra = $_POST['Contra'];
-
-                if($Email==""){
-                    $emailError="Ingrese su correo electrónico.<br>";
-                }
-
-                if($Contra==""){
-                    $contraError = "Ingrese su contraseña";
-                }
-            }
-       ?>
-
-      <form class="form" action="<?php echo base_url('mostrar_usuario')?>" method="POST">
+ 
+      <form class="form" action="<?php echo base_url('/noticias/login')?>" method="POST">
         <p style="text-align:right;">
           <a href="<?php echo base_url('noticia')?>">
             <button type="button" class="btn-close" aria-label="Close">
@@ -31,12 +14,12 @@
            <h2> Iniciar sesi&oacuten:</h2><br>
 
             E-mail:<br>    
-                <input type="email" name="Email" > <br>
-                <span class="error"> <?php echo $emailError; ?></span><br>
+                <input type="email" name="usuario" required> <br>
+                <span class="error"> </span><br>
 
             Contrase&ntildea:<br>
-               <input type="password" name="Contra"><br>
-               <span class="error"> <?php echo $contraError; ?></span><br>
+               <input type="password" name="contra" required><br>
+               <span class="error"> </span><br>
 
             <input type="submit" name="ingresar" value="Ingresar"><br><br>
 
