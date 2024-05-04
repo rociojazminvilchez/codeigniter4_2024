@@ -17,7 +17,7 @@ class Noticias extends BaseController
         $resultado = $noticiasModel->findAll();
 
         $data = ['noticias' => $resultado];
-        
+
         return view('noticias/index',$data);
     }
 
@@ -46,18 +46,34 @@ class Noticias extends BaseController
         }
 
         #archivos
-        /*
         $file = $this->request->getFile('img');
+        
         if(!$file->isValid()){
-            echo $file->getErrorString();
-            exit;
+           echo $file->getErrorString();
+           exit;
+
+        }
+       $validacion = [ 
+        'img' => [ 
+            'rules' => [ 
+                'is_image[img]',
+                'max_size[img,2048]',
+                'max_dims[img,1080,1080]',
+                'mime_in[img,image/png,image/jpeg]'
+            ]     
+        ]
+       ];
+
+        if(!$this->validate($validacion)){
+           print_r($this->validator->getErrors());
+           exit;
         }
 
         if(!$file->hasMoved()){
             $ruta = ROOTPATH. 'public/imagenes';
-            $file->move($ruta); 
+            $file->move($ruta);
         }
-*/
+     
         $post = $this->request->getPost(['titulo', 'descripcion', 'estado', 'categoria']);
 
         $noticiasModel = new NoticiasModel();
@@ -67,7 +83,7 @@ class Noticias extends BaseController
             'descripcion'           => trim($post['descripcion']),
             'estado' => $post['estado'],
             'categoria'         => $post['categoria'],
-            
+            'img' => $file,
         ]);
 
         return redirect()->to('noticias');
