@@ -21,7 +21,7 @@
             }
        ?>
 
-      <form class="form" action="bd\BDusuario.php" method="POST">
+      <form class="form" action="<?php echo base_url('mostrar_usuario')?>" method="POST">
         <p style="text-align:right;">
           <a href="<?php echo base_url('noticia')?>">
             <button type="button" class="btn-close" aria-label="Close">
@@ -42,9 +42,7 @@
 
             <a href="<?php echo base_url('noticias/recuperar_contra')?>"> ¿Olvidaste tu contrase&ntildea? </a>
         </form>
-        <?php 
-            //include("bd\BDusuarios.php");
-        ?>
+ 
     </body>
 
 <?php echo $this->endSection();?>

@@ -1,5 +1,5 @@
 <?php
-session_start();
-session_destroy();
-header('Location: index.php');
+$session = \Config\Services::session($config);
+$session->close();
+ base_url('noticias'); 
 ?>

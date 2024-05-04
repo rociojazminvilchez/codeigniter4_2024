@@ -6,13 +6,16 @@ use App\Controllers\BaseController;
 
 use App\Models\NoticiasModel;
 
-#use App\Models\UsuarioModel;
+use App\Models\IngresoModel;
 
 class Noticias extends BaseController
 {
+   
 
     public function index()
     {
+        $session = \Config\Services::session();
+        
         $noticiasModel = new NoticiasModel();
         $resultado = $noticiasModel->findAll();
 
@@ -33,6 +36,7 @@ class Noticias extends BaseController
 
     public function create()
     {
+        $correo = $_SESSION['usuario'];
         $reglas = [
             'titulo'           => 'required|min_length[3]',
             'descripcion' => 'required',
@@ -84,6 +88,7 @@ class Noticias extends BaseController
             'estado' => $post['estado'],
             'categoria'         => $post['categoria'],
             'img' => $file,
+            'usuario' => $correo,
         ]);
 
         return redirect()->to('noticias');
@@ -108,6 +113,16 @@ class Noticias extends BaseController
 
         $data = ['noticias' => $resultado];
         return view('noticias/mostrar' ,$data);
+    }
+     
+    public function mostrar_usuario()
+    {
+        $ingresoModel = new IngresoModel();
+        $resultado = $ingresoModel->findAll();
+
+        $data = ['ingreso' => $resultado];
+
+      return view('noticias/index',$data);
     }
 
     public function update($id = null)

@@ -3,8 +3,11 @@
 <?php echo $this->section('contenido');?>
     <body>
 
-    <?php if (session()->getFlashdata('error') !== null) { ?>
-      
+    <?php
+    $session = \Config\Services::session($config);
+    $correo = $_SESSION['usuario'];
+    if (session()->getFlashdata('error') !== null) { ?>
+
     <div class="alert alert-danger">
         <?= session()->getFlashdata('error'); ?>
     </div>
@@ -49,7 +52,7 @@
           <input type="file" name="img" id='img' accept="image/jpeg,image/png"><br>
 
         <!-- Correo oculto-->
-          <input type="hidden" name="Email" value="<?php ?>">
+          <input type="hidden" name="Email" value="<?php $correo ?>">
 
 
         <input type="submit" name="oferta" value="CREAR NOTICIA">
