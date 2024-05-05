@@ -10,6 +10,7 @@ protected $primaryKey = 'id';
 protected $useAutoIncrement = true; 
 protected $returnType = 'array'; //tambien se puede usar como object
 protected $useSoftDeletes = false; //Como se comporta la eliminacion de registro
+protected $protectFields    = true;
 protected $allowedFields = ['titulo', 'descripcion','estado','categoria','img','usuario']; //Van los campos de la tabla
 /*Esta configurado para que de baja el registro pero no lo elimina completamente*/
 
@@ -18,10 +19,6 @@ protected $useTimestamps = true;
 protected $dateFormat = 'datetime';
 protected $createdField = 'fecha';
 protected $updatedField = 'fecha_modificada';
-#protected $deletedField = 'deleted_at';
-#protected $validationRules = []; // Validation
-#protected $validationMessages = [];
-#protected $skipValidation = false;
-#protected $cleanValidationRules = true;
+
 
 }

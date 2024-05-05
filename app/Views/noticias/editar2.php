@@ -2,17 +2,21 @@
 
 <?php echo $this->section('contenido');?>
 
+
+<body>
 <?php if (session()->getFlashdata('error') !== null) { ?>
     <div class="alert alert-danger">
         <?= session()->getFlashdata('error'); ?>
     </div>
 <?php } ?>
-<body>
 
 <div class="container">
     <div class="row">
-      <form action="<?= base_url('noticias/' . $not['id']); ?>" method="post" enctype="multipart/form-data" style="margin-bottom:75px;">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad" >
+      <form action="<?php echo base_url('noticias/' . $not['id']); ?>" method="post" enctype="multipart/form-data" style="margin-bottom:75px;">
+      <input type="hidden" name="_method" value="put">
+      <input type="hidden" name="id" value=" <?= $not['id']; ?>">
+      <input type="hidden" name="correo" value="<?= $_SESSION['usuario']?>">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad" >
           <div class="panel panel-success"><br>
             <h2 class="panel-title"><center><font size="5"><i class='glyphicon glyphicon-user'></i>EDITAR</font></center></h2>
             <div class="panel-body">
@@ -26,7 +30,7 @@
                   <div class="row">
   						      <div class="col-md-12">
 							        <div class="form-group">
-								        <input type="file" name="imagen">
+								        <input type="file" name="img">
 							        </div>
 						        </div>	
 		              </div>
@@ -44,24 +48,23 @@
                       <tr>
                         <td>
                             Titulo:</td>
-                            <td><input type="text" class="form-control input-sm" name="contra" value="<?= $not['titulo']; ?>" required></td>
+                            <td><input type="text" class="form-control input-sm" name="titulo" value="<?= $not['titulo']; ?>" required></td>
                       </tr>
                        
                       <tr>
                         <td>
                             Descripcion:</td>
-                            <td><input type="text" class="form-control input-sm" name="contra" value="<?= $not['descripcion']; ?>" required></td>
+                            <td><input type="text" class="form-control input-sm" name="descripcion" value="<?= $not['descripcion']; ?>" required></td>
                       </tr>
                       <tr>
                         <td>Categoria:</td>
                         <td><select id="categoria" name="categoria" >
-            <option value="seleccione"><?= ($not['categoria']); ?></option>
-            <option value="economia">Economia</option>
-            <option value="politica">Politica</option>
-            <option value="turismo">Turismo</option>
-            <option value="deporte">Deporte</option>
-          </select>
-                </td>
+                          <option value="seleccione"><?= ($not['categoria']); ?></option>
+                          <option value="economia">Economia</option>
+                          <option value="politica">Politica</option>
+                          <option value="turismo">Turismo</option>
+                          <option value="deporte">Deporte</option>
+                        </select></td>
                       </tr>
 					            
                     </body>

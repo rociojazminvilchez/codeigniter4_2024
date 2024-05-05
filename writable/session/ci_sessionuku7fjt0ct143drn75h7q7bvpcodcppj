@@ -1,0 +1,11 @@
+__ci_last_regenerate|i:1714948006;_ci_previous_url|s:67:"http://localhost/codeigniter4_2024/public/index.php/noticias/6/edit";usuario|s:16:"rociov@gmail.com";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:6:{s:7:"_method";s:3:"put";s:2:"id";s:2:" 6";s:6:"correo";s:16:"rociov@gmail.com";s:6:"contra";s:122:"Los cuestionamientos a la candidatura del juez federal Ariel Lijo para ocupar un lugar en la Corte Suprema se multiplican.";s:9:"categoria";s:10:"seleccione";s:6:"editar";s:0:"";}}__ci_vars|a:3:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:5:"error";s:3:"old";}_ci_validation_errors|a:3:{s:6:"titulo";s:29:"The titulo field is required.";s:11:"descripcion";s:34:"The descripcion field is required.";s:6:"estado";s:29:"The estado field is required.";}error|s:331:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>The titulo field is required.</li>
+					<li>The descripcion field is required.</li>
+					<li>The estado field is required.</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";

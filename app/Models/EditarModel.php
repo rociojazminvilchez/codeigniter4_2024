@@ -2,10 +2,10 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class NoticiasModel extends Model{ 
+class EditarModel extends Model{ 
  
       
-protected $table = 'noticias'; 
+protected $table = 'editar'; 
 protected $primaryKey = 'id';
 protected $useAutoIncrement = true; 
 protected $returnType = 'array'; //tambien se puede usar como object

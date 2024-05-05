@@ -7,6 +7,8 @@ use App\Controllers\BaseController;
 use App\Models\NoticiasModel;
 
 use App\Models\IngresoModel;
+
+use App\Models\EditarModel;
 use CodeIgniter\Exceptions\AlertError;
 
 class Noticias extends BaseController
@@ -95,27 +97,7 @@ class Noticias extends BaseController
         return redirect()->to('noticias');
     }
 
-    //EDITAR
-    public function editar(){
-        $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
-
-        $data = ['noticias' => $resultado];
-        return view('noticias/editar',$data);
-    }
-
-    public function edit($id = null )
-    {
-        if ($id == null) {
-            return redirect()->route('noticias');
-        }
-
-        $noticiasModel = new NoticiasModel();
-        $data['not'] = $noticiasModel->find($id);
-
-        return view('noticias/editar2', $data);
-    }
-
+   
     public function mostrar()
     {
         $noticiasModel = new NoticiasModel();
@@ -147,16 +129,63 @@ class Noticias extends BaseController
             return view('noticias/ingreso');
         }
     }
-//Cerrar sesion
-    public function salir() {
-		$session = session();
-        $session->destroy();
-        return redirect()->to(base_url('noticias'));
-	}
+
+ //EDITAR
+    public function editar()
+    {
+        $noticiasModel = new NoticiasModel();
+        $resultado = $noticiasModel->findAll();
+
+        $data = ['noticias' => $resultado];
+        return view('noticias/editar',$data);
+    }
+
+    public function edit($id = null )
+    {
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
+
+        $noticiasModel = new NoticiasModel();
+        $data['not'] = $noticiasModel->find($id);
+        
+        return view('noticias/editar2', $data);
+        
+    }
 
     public function update($id = null)
-    {
-        //
+    { 
+        if (!$this->request->is('put') || $id == null) {
+            return redirect()->route('noticias');
+        }
+        $reglas = [
+            'titulo'           => 'required|min_length[3]',
+            'descripcion' => 'required',
+            'categoria'     => 'required',
+
+        ];
+
+        if (!$this->validate($reglas)) {
+            return redirect()->back()->withInput()->with('error', $this->validator->listErrors());
+        }
+
+
+     
+        $post = $this->request->getPost(['usuario','titulo', 'descripcion', 'estado', 'categoria']);
+
+        $noticiasModel = new NoticiasModel();
+
+        $noticiasModel->update($id,[
+        #'id' => $post['id'],
+            'titulo'            => trim($post['titulo']),
+            'descripcion'           => trim($post['descripcion']),
+            'estado' => $post['estado'],
+            'categoria'         => $post['categoria'],
+            #'img' => $file,
+            
+        ]);
+       
+        return redirect()->to('noticias');
     }
 
 
@@ -206,4 +235,12 @@ class Noticias extends BaseController
     public function validar(){
         return view('/panel/validar');
     }
+
+//Cerrar sesion
+    public function salir() {
+		$session = session();
+        $session->destroy();
+        return redirect()->to(base_url('noticias'));
+	}
+
 }

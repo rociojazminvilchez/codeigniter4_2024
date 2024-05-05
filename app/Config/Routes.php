@@ -11,10 +11,11 @@ $routes->post('/noticias/login', 'Noticias::login');
 $routes->get('/', 'Noticias::salir');
 $routes->get('/noticias/recuperar_contra', 'Noticias::recuperar');
 
+#$routes->post('noticias/editar2', 'Noticias::updateE');
 #noticia
 $routes->get('/noticias/historial', 'Noticias::historial');
 $routes->get('/noticias/editar', 'Noticias::editar');
-$routes->get('/noticias/editar2', 'Noticias::edit');
+#$routes->get('/noticias/editar2', 'Noticias::edit');
 
 #categorias
 $routes->get('/categorias/economia', 'Noticias::economia');
@@ -31,6 +32,8 @@ $routes->get('/panel/borrador', 'Noticias::borrador');
 $routes->get('/panel/correcion', 'Noticias::correcion');
 
 $routes->get('/noticias/mostrar', 'Noticias::mostrar');
+
+#$routes->get('noticias/(:num)/editar2', 'Noticias::edit');
 
 
 $routes->resource('noticias', ['placeholder' => '(:num)', 'except' => 'show']);
