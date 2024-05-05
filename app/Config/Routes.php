@@ -37,3 +37,4 @@ $routes->get('/noticias/mostrar', 'Noticias::mostrar');
 
 
 $routes->resource('noticias', ['placeholder' => '(:num)', 'except' => 'show']);
+$routes->resource('editar', ['placeholder' => '(:num)', 'except' => 'show']);

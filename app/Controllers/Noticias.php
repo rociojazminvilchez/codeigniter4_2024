@@ -153,11 +153,12 @@ class Noticias extends BaseController
         
     }
 
-    public function update($id = null)
+    public function createEditar($id = null)
     { 
+        /*
         if (!$this->request->is('put') || $id == null) {
             return redirect()->route('noticias');
-        }
+        }*/
         $reglas = [
             'titulo'           => 'required|min_length[3]',
             'descripcion' => 'required',
@@ -171,15 +172,15 @@ class Noticias extends BaseController
 
 
      
-        $post = $this->request->getPost(['usuario','titulo', 'descripcion', 'estado', 'categoria']);
+        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria']);
 
-        $noticiasModel = new NoticiasModel();
+        $editarModel = new EditarModel();
 
-        $noticiasModel->update($id,[
-        #'id' => $post['id'],
+        $editarModel->insert([
+            'id' => $post['id'],
             'titulo'            => trim($post['titulo']),
             'descripcion'           => trim($post['descripcion']),
-            'estado' => $post['estado'],
+            
             'categoria'         => $post['categoria'],
             #'img' => $file,
             

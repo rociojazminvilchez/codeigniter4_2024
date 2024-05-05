@@ -7,7 +7,7 @@ class EditarModel extends Model{
       
 protected $table = 'editar'; 
 protected $primaryKey = 'id';
-protected $useAutoIncrement = true; 
+protected $useAutoIncrement = false; 
 protected $returnType = 'array'; //tambien se puede usar como object
 protected $useSoftDeletes = false; //Como se comporta la eliminacion de registro
 protected $allowedFields = ['titulo', 'descripcion','estado','categoria','img','usuario']; //Van los campos de la tabla

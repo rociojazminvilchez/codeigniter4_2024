@@ -12,8 +12,8 @@
 
 <div class="container">
     <div class="row">
-      <form action="<?php echo base_url('noticias/' . $not['id']); ?>" method="post" enctype="multipart/form-data" style="margin-bottom:75px;">
-      <input type="hidden" name="_method" value="put">
+      <form action="<?php echo base_url('editar'); ?>" method="post" enctype="multipart/form-data" style="margin-bottom:75px;">
+      
       <input type="hidden" name="id" value=" <?= $not['id']; ?>">
       <input type="hidden" name="correo" value="<?= $_SESSION['usuario']?>">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad" >
