@@ -9,7 +9,7 @@
       <a class="btn btn-outline-primary" href="<?php echo base_url('/noticias/editar')?>" role="button">EDITAR</a>
     </div>
     <div class="col">
-        <a class="btn btn-outline-primary" href="<?php echo base_url('/panel/validar')?>" role="button">Validar</a>
+        <a class="btn btn-outline-primary" href="<?php echo base_url('/noticias/mostrarTODO')?>" role="button">Historial</a>
     </div>
     <div class="col">
     <a class="btn btn-outline-primary" href="<?php echo base_url('/panel/correcion')?>" role="button">Correci&oacuten</a>

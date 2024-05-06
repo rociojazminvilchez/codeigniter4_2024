@@ -29,7 +29,7 @@ class Noticias extends BaseController
 
     public function show($id = null)
     {
-        //
+    
     }
 
     public function new()
@@ -148,6 +148,7 @@ class Noticias extends BaseController
 
     public function edit($id = null )
     {
+       
         if ($id == null) {
             return redirect()->route('noticias');
         }
@@ -191,25 +192,18 @@ class Noticias extends BaseController
     }
 
 #HISTORIAL
-    public function historial(){
-        $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
 
-        $data = ['noticias' => $resultado];
-
-        return view('/noticias/historial', $data);
+    public function historial($id = null){
+        print_r ($id);
+        exit;
+        
+        return view('/noticias/historial');
     }
     
-    public function original($id = null )
+    public function original( )
     {
-        if ($id == null) {
-            return redirect()->route('noticias');
-        }
-
-        $noticiasModel = new NoticiasModel();
-        $data['not'] = $noticiasModel->find($id);
         
-        return view('mostrar/original', $data);
+        return view('mostrar/original');
     }
 
     public function borrador(){

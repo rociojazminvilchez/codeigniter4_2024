@@ -14,8 +14,8 @@ $routes->get('/', 'Noticias::salir');
 $routes->get('/noticias/recuperar_contra', 'Noticias::recuperar');
 
 #HISTORIAL
+
 $routes->get('/noticias/(:num)/historial', 'Noticias::historial');
-$routes->get('/noticias/(:num)/original', 'Noticias::original');
 
 $routes->get('/noticias/editar', 'Noticias::editar');
 

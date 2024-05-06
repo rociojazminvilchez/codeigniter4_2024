@@ -10,7 +10,7 @@
       <a class="btn btn-outline-primary" href="<?php echo base_url('/panel/borrador')?>" role="button">EDITAR</a>
     </div>
     <div class="col">
-        <a class="btn btn-outline-primary" href="<?php echo base_url('/panel/validar')?>" role="button">Validar</a>
+        <a class="btn btn-outline-primary" href="<?php echo base_url('/panel/validar')?>" role="button">Historial</a>
     </div>
     <div class="col">
     <a class="btn btn-outline-primary" href="<?php echo base_url('/panel/correcion')?>" role="button">Correci&oacuten</a>
@@ -49,25 +49,5 @@
 
     </tbody>
 </table>
-
-<?= $this->endSection(); ?>
-
-<?= $this->section('script'); ?>
-
-<script>
-    const eliminaModal = document.getElementById('eliminaModal')
-    if (eliminaModal) {
-        eliminaModal.addEventListener('show.bs.modal', event => {
-            // Button that triggered the modal
-            const button = event.relatedTarget
-            // Extract info from data-bs-* attributes
-            const url = button.getAttribute('data-bs-url')
-
-            // Update the modal's content.
-            const form = eliminaModal.querySelector('#form-elimina')
-            form.setAttribute('action', url)
-        })
-    }
-</script>
 
 <?= $this->endSection(); ?>

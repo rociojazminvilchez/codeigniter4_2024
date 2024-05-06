@@ -29,24 +29,17 @@ class Editar extends BaseController
      */
     public function show($id = null)
     {
-        //
+        $noticiasModel = new NoticiasModel();
+        $data['not'] = $noticiasModel->find($id);
+        return view('mostrar/editada', $data);
     }
 
-    /**
-     * Return a new resource object, with default properties.
-     *
-     * @return ResponseInterface
-     */
     public function new()
     {
         //
     }
 
-    /**
-     * Create a new resource object, from "posted" parameters.
-     *
-     * @return ResponseInterface
-     */
+
     public function create()
     {
         $reglas = [
@@ -81,37 +74,19 @@ class Editar extends BaseController
         return redirect()->to('noticias');
     }
 
-    /**
-     * Return the editable properties of a resource object.
-     *
-     * @param int|string|null $id
-     *
-     * @return ResponseInterface
-     */
+
     public function edit($id = null)
     {
         //
     }
 
-    /**
-     * Add or update a model resource, from "posted" properties.
-     *
-     * @param int|string|null $id
-     *
-     * @return ResponseInterface
-     */
+
     public function update($id = null)
     {
         //
     }
 
-    /**
-     * Delete the designated resource object from the model.
-     *
-     * @param int|string|null $id
-     *
-     * @return ResponseInterface
-     */
+
     public function delete($id = null)
     {
         //
