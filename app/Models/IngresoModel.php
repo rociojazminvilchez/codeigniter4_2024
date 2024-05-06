@@ -8,5 +8,15 @@ class IngresoModel extends Model{
             $Usuario = $this->db->table('ingreso');
 			$Usuario->where($data);
 			return $Usuario->get()->getResultArray();
+   }
+
+   public function mostrarTodo(){
+    $noticiasModel = new NoticiasModel();
+    $resultado = $noticiasModel->findAll();
+    $data = ['noticias' => $resultado];
+
+
+    return $data;
+   }
 }
-}
+?>

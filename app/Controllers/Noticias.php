@@ -9,7 +9,8 @@ use App\Models\NoticiasModel;
 use App\Models\IngresoModel;
 
 use App\Models\EditarModel;
-use CodeIgniter\Exceptions\AlertError;
+
+use App\Models\HistorialModel;
 
 class Noticias extends BaseController
 {
@@ -111,17 +112,21 @@ class Noticias extends BaseController
     {
         $usuario = $this->request->getPost('usuario');    
         $contra = $this->request->getPost('contra');
+        $tipo = $this->request->getPost('tipo');
 
        
         $ingresoModel = new IngresoModel();
-        //$data = $ingresoModel->obtenerUsuario($usuario, $contra);  
-        $data = $ingresoModel->obtenerUsuario(['correo' => $usuario,'contra' => $contra]);
-         
-        
+
+        $data = $ingresoModel->obtenerUsuario(['correo' => $usuario,'contra' => $contra,'rol' => $tipo]);
+    
         if(count($data) > 0){
            // MANEJO DE SESION
+           $data = [
+                'usuario' => $usuario,
+                'rol' => $tipo,
+           ];
             $session = session();
-            $session -> set('usuario',$usuario);
+            $session -> set($data);
 
             return redirect()->to('noticias');
         }else{
@@ -137,6 +142,7 @@ class Noticias extends BaseController
         $resultado = $noticiasModel->findAll();
 
         $data = ['noticias' => $resultado];
+
         return view('noticias/editar',$data);
     }
 
@@ -151,42 +157,6 @@ class Noticias extends BaseController
         
         return view('noticias/editar2', $data);
         
-    }
-
-    public function createEditar($id = null)
-    { 
-        /*
-        if (!$this->request->is('put') || $id == null) {
-            return redirect()->route('noticias');
-        }*/
-        $reglas = [
-            'titulo'           => 'required|min_length[3]',
-            'descripcion' => 'required',
-            'categoria'     => 'required',
-
-        ];
-
-        if (!$this->validate($reglas)) {
-            return redirect()->back()->withInput()->with('error', $this->validator->listErrors());
-        }
-
-
-     
-        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria']);
-
-        $editarModel = new EditarModel();
-
-        $editarModel->insert([
-            'id' => $post['id'],
-            'titulo'            => trim($post['titulo']),
-            'descripcion'           => trim($post['descripcion']),
-            
-            'categoria'         => $post['categoria'],
-            #'img' => $file,
-            
-        ]);
-       
-        return redirect()->to('noticias');
     }
 
 
@@ -220,9 +190,26 @@ class Noticias extends BaseController
         return view('/categorias/deporte');
     }
 
-#Noticia
+#HISTORIAL
     public function historial(){
-        return view('/noticias/historial');
+        $noticiasModel = new NoticiasModel();
+        $resultado = $noticiasModel->findAll();
+
+        $data = ['noticias' => $resultado];
+
+        return view('/noticias/historial', $data);
+    }
+    
+    public function original($id = null )
+    {
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
+
+        $noticiasModel = new NoticiasModel();
+        $data['not'] = $noticiasModel->find($id);
+        
+        return view('mostrar/original', $data);
     }
 
     public function borrador(){

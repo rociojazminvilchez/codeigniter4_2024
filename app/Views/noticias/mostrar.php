@@ -44,7 +44,7 @@
                 <td><?= $not['img']; ?></td>
                 <td><?= $_SESSION['usuario'] ?></td>
                 <td>
-                    <a href="<?php echo base_url('noticias/historial')?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>
+                    <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>
                 </td>
             </tr>
         <?php endforeach; ?>

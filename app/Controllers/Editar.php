@@ -63,7 +63,7 @@ class Editar extends BaseController
 
 
      
-        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria','correo']);
+        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria','usuario','editor']);
 
         $editarModel = new EditarModel();
 
@@ -72,7 +72,8 @@ class Editar extends BaseController
             'titulo'            => trim($post['titulo']),
             'descripcion'           => trim($post['descripcion']),
             'categoria'         => $post['categoria'],
-            'usuario'         => $post['correo'],
+            'usuario'         => $post['usuario'],
+            'editor' => $post['editor'],
             #'img' => $file,
             
         ]);

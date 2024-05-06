@@ -68,7 +68,7 @@
           <?php             
           if (isset($_SESSION['usuario'])) {
             ?>
-              <li><a class="dropdown-item"> <?php  ?> </a></li>
+              <li><a class="dropdown-item"> <?php  echo $_SESSION['rol']; ?> </a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="<?php echo base_url('noticias/new')?>">Crear noticia</a></li>
               <li><a class="dropdown-item" href="<?php echo base_url('noticias/mostrar')?>">Panel</a></li>

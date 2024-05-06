@@ -20,6 +20,14 @@
             Contrase&ntildea:<br>
                <input type="password" name="contra" required><br>
                <span class="error"> </span><br>
+               
+            Seleccione su tipo de usuario: <br>
+          <select id="tipo" name="tipo" required>
+            <option value="seleccione">Seleccione...</option>
+            <option value="Editor">Editor</option>
+            <option value="Validador">Validador</option>
+            <option value="Editor|Validador">Editor|Validador</option>
+          </select><br><br>
 
             <input type="submit" name="ingresar" value="Ingresar"><br><br>
 
