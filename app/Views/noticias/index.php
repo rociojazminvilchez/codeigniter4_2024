@@ -27,9 +27,6 @@
 </div>
 <?php endforeach; ?>
 
-<!--
-    <a href="<?= base_url('noticias/new'); ?>" class="btn btn-success">Agregar</a> 
--->
 </body>
 
 

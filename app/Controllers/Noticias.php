@@ -53,37 +53,25 @@ class Noticias extends BaseController
 
         #archivos
         /*
-        $file = $this->request->getFile('img');
-        
-        if(!$file->isValid()){
-           echo $file->getErrorString();
-           exit;
+        $config['upload_path']   = 'asset/img/productos/';
+    $config['allowed_types'] = 'gif|jpg|png';
+    $config['overwrite']     = true;
+    $config['encrypt_name']  = false;
+    $config['remove_spaces'] = true;
+    if (!is_dir($config['upload_path'])) {
+        die("El directorio de carga no existe");
+    }
+    $this->load->library('upload', $config);
+    if (!$this->upload->do_upload('image')) {
+        echo 'error';
+    }
+    else {
+        $ruta_archivo =['upload_data' => $this->upload->data()];
+    }
+         */
 
-        }
-       $validacion = [ 
-        'img' => [ 
-            'rules' => [ 
-                'is_image[img]',
-                'max_size[img,2048]',
-                'max_dims[img,1080,1080]',
-                'mime_in[img,image/png,image/jpeg]'
-            ]     
-        ]
-       ];
-
-        if(!$this->validate($validacion)){
-           print_r($this->validator->getErrors());
-           exit;
-        }
-
-        if(!$file->hasMoved()){
-            $ruta = ROOTPATH. 'public/imagenes';
-            $file->move($ruta);
-        }
-        */
-     
         $post = $this->request->getPost(['titulo', 'descripcion', 'estado', 'categoria']);
-
+    
         $noticiasModel = new NoticiasModel();
 
         $noticiasModel->insert([
@@ -91,7 +79,7 @@ class Noticias extends BaseController
             'descripcion'           => trim($post['descripcion']),
             'estado' => $post['estado'],
             'categoria'         => $post['categoria'],
-            #'img' => $file,
+            
             
         ]);
 

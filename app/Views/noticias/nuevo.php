@@ -51,7 +51,7 @@
           </select><br><br>
 
         Imagen:<br>  
-          <input type="file" name="img" id='img' accept="image/jpeg,image/png"><br>
+          <input type="file" name="image" id="image" accept="image/jpeg,image/png"><br>
 
         <!-- Correo oculto-->
           <input type="hidden" name="Email" value="<?php $correo ?>">
