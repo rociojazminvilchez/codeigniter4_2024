@@ -70,12 +70,26 @@
             ?>
               <li><a class="dropdown-item"> <?php  echo $_SESSION['rol']; ?> </a></li>
               <li><hr class="dropdown-divider"></li>
+              <?php
+              if(($_SESSION['rol']=='Editor' or $_SESSION['rol']=='Editor|Validador' )){
+              ?>
               <li><a class="dropdown-item" href="<?php echo base_url('noticias/new')?>">Crear noticia</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('noticias/mostrar')?>">Panel</a></li>
-              <!--
-              <li><a class="dropdown-item" href="historial.php">Historial</a></li>
-            -->
+            <?php
+              }
+              ?>
+               <?php
+              if($_SESSION['rol']=='Validador' ){
+              ?>
+              <li><a class="dropdown-item" href="<?php echo base_url('estado/validar')?>">Panel</a></li>
               <li><a class="dropdown-item" href="<?php echo base_url('noticias/salir')?>">Cerrar sesi&oacuten</a></li>
+            <?php
+              }else{
+              ?>
+              <li><a class="dropdown-item" href="<?php echo base_url('noticias/mostrar')?>">Panel</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('noticias/salir')?>">Cerrar sesi&oacuten</a></li>
+              <?php
+              }
+              ?>
               <?php
             }else{
               ?>

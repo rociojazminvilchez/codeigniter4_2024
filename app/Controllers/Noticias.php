@@ -131,7 +131,7 @@ class Noticias extends BaseController
 
         $data = ['noticias' => $resultado];
 
-        return view('noticias/editar',$data);
+        return view('estado/editar',$data);
     }
 
     public function edit($id = null )
@@ -144,7 +144,7 @@ class Noticias extends BaseController
         $noticiasModel = new NoticiasModel();
         $data['not'] = $noticiasModel->find($id);
         
-        return view('noticias/editar2', $data);
+        return view('estado/editar2', $data);
         
     }
 
@@ -199,11 +199,15 @@ class Noticias extends BaseController
     }
 
     public function correcion(){
-        return view('/panel/correcion');
+        return view('/estado/correcion');
     }
 
     public function validar(){
-        return view('/panel/validar');
+        $noticiasModel = new NoticiasModel();
+        $resultado = $noticiasModel->findAll();
+
+        $data = ['noticias' => $resultado];
+        return view('/estado/validar', $data);
     }
 
 //Cerrar sesion

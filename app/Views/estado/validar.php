@@ -34,24 +34,24 @@
   <!-- PERFIL EDITOR | VALIDADOR  -->   
   <div class="container text-center">
   <div class="row">
+    <!--
     <div class="col">
       <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
     </div>
+    -->
     <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>
     </div>
     <div class="col">
-        <a class="btn btn-primary" href="<?php echo base_url('/estado/validar')?>" role="button">VALIDAR</a>
+        <a class="btn btn-primary" href="<?php echo base_url('/noticias/mostrar')?>" role="button">HISTORIAL</a>
     </div>
   </div>
 </div>
 <?php 
 }
    ?> 
-</p>
 
-<h3 class="my-3" id="titulo" align="center"> PANEL NOTICIAS </h3> 
-
+<h3 class="my-3" id="titulo" align="center"> PANEL VALIDAR </h3> 
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
         <tr>
@@ -78,7 +78,9 @@
                 <td><?= $not['img']; ?></td>
                 <td><?= $_SESSION['usuario'] ?></td>
                 <td>
-                    <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>
+                    <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">PUBLICAR</a><br><br>
+                    <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a> <br><br>
+                    <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">RECHAZAR</a> <br><br>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -87,7 +89,7 @@
 </table>
 
 <?= $this->endSection(); ?>
-<!--
+
 <?= $this->section('script'); ?>
 
 <script>
@@ -105,5 +107,4 @@
         })
     }
 </script>
--->
 <?= $this->endSection(); ?>

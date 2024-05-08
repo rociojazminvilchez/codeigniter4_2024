@@ -1,6 +1,7 @@
 <?php echo $this->extend('plantilla\layout');?>
 
 <?php echo $this->section('contenido');?>
+
 <br>
 <p>
 <?php             
@@ -48,19 +49,16 @@
 <?php 
 }
    ?> 
-</p>
 
-<h3 class="my-3" id="titulo" align="center"> PANEL NOTICIAS </h3> 
+<h3 class="my-3" id="titulo" align="center"> PANEL EDITAR </h3> 
 
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
         <tr>
             <th scope="col">Titulo</th>
             <th scope="col">Descripcion</th>
-            <th scope="col">Estado</th>
             <th scope="col">Categoria</th>
             <th scope="col">Imagen</th>
-            <th scope="col">Usuario</th>
             <th scope="col"></th>
 
         </tr>
@@ -73,12 +71,11 @@
             <tr>
                 <td><?= $not['titulo']; ?></td>
                 <td><?= $not['descripcion']; ?></td>
-                <td><?= $not['estado']; ?></td>
                 <td><?= $not['categoria']; ?></td>
                 <td><?= $not['img']; ?></td>
-                <td><?= $_SESSION['usuario'] ?></td>
+            
                 <td>
-                    <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>
+                    <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -86,24 +83,4 @@
     </tbody>
 </table>
 
-<?= $this->endSection(); ?>
-<!--
-<?= $this->section('script'); ?>
-
-<script>
-    const eliminaModal = document.getElementById('eliminaModal')
-    if (eliminaModal) {
-        eliminaModal.addEventListener('show.bs.modal', event => {
-            // Button that triggered the modal
-            const button = event.relatedTarget
-            // Extract info from data-bs-* attributes
-            const url = button.getAttribute('data-bs-url')
-
-            // Update the modal's content.
-            const form = eliminaModal.querySelector('#form-elimina')
-            form.setAttribute('action', url)
-        })
-    }
-</script>
--->
 <?= $this->endSection(); ?>
