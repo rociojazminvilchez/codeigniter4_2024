@@ -4,23 +4,21 @@ namespace App\Controllers;
 
 use App\Models\NoticiasModel;
 
-use App\Models\IngresoModel;
+use App\Models\CorregirModel;
 
-use App\Models\EditarModel;
-
-class Editar extends BaseController
+class Corregir extends BaseController
 {
+
     public function index()
     {
         //
     }
 
-
     public function show($id = null)
     {
         $noticiasModel = new NoticiasModel();
         $data['not'] = $noticiasModel->find($id);
-        return view('mostrar/editada', $data);
+        return view('mostrar/corregida', $data);
     }
 
     public function new()
@@ -28,53 +26,47 @@ class Editar extends BaseController
         //
     }
 
-
     public function create()
     {
-        $reglas = [
+        //
+    }
 
+    public function edit($id = null)
+    {
+        $reglas = [
             'titulo'           => 'required|min_length[3]',
             'descripcion' => 'required',
             'categoria'     => 'required',
-
+            'estado' => 'required',
         ];
 
         if (!$this->validate($reglas)) {
             return redirect()->back()->withInput()->with('error', $this->validator->listErrors());
         }
-
-
      
-        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria','usuario','editor']);
+        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria','estado','usuario','correcion']);
 
-        $editarModel = new EditarModel();
+        $corregirModel = new CorregirModel();
 
-        $editarModel->insert([
+        $corregirModel->insert([
             'id' => $post['id'],
-            'titulo'            => trim($post['titulo']),
-            'descripcion'           => trim($post['descripcion']),
-            'categoria'         => $post['categoria'],
-            'usuario'         => $post['usuario'],
-            'editor' => $post['editor'],
+            'titulo'     => trim($post['titulo']),
+            'descripcion' => trim($post['descripcion']),
+            'categoria'  => $post['categoria'],
+            'estado'  => $post['estado'],
+            'usuario'  => $post['usuario'],
+            'correcion' => $post['correcion'],
             #'img' => $file,
             
         ]);
        
-        return redirect()->to('noticias');
+        return redirect()->to('estado/validar');
     }
-
-
-    public function edit($id = null)
-    {
-        //
-    }
-
 
     public function update($id = null)
     {
         //
     }
-
 
     public function delete($id = null)
     {

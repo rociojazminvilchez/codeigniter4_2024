@@ -40,7 +40,7 @@
     </div>
     -->
     <div class="col">
-        <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>
+        <a class="btn btn-primary" href="<?php echo base_url('/estado/corregir')?>" role="button">CORRECI&OacuteN</a>
     </div>
     <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/noticias/mostrar')?>" role="button">HISTORIAL</a>
@@ -57,33 +57,30 @@
         <tr>
             <th scope="col">Titulo</th>
             <th scope="col">Descripcion</th>
-            <th scope="col">Estado</th>
             <th scope="col">Categoria</th>
             <th scope="col">Imagen</th>
-            <th scope="col">Usuario</th>
             <th scope="col"></th>
 
         </tr>
     </thead>
-
-    <tbody>
-
-        <?php foreach ($noticias as $not) : ?>
-
+ <?php foreach ($noticias as $not) : 
+    if($not['estado']=='validar'){
+    ?>
+    
             <tr>
                 <td><?= $not['titulo']; ?></td>
                 <td><?= $not['descripcion']; ?></td>
-                <td><?= $not['estado']; ?></td>
+                
                 <td><?= $not['categoria']; ?></td>
                 <td><?= $not['img']; ?></td>
-                <td><?= $_SESSION['usuario'] ?></td>
                 <td>
-                    <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">PUBLICAR</a><br><br>
-                    <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a> <br><br>
-                    <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">RECHAZAR</a> <br><br>
+                    <a href="<?php echo base_url(''); ?>" class="btn btn-warning btn-sm me-2">PUBLICAR</a><br><br>
+                    <a href="<?php echo base_url('corregir/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a> <br><br>
+                    <a href="<?php echo base_url(''); ?>" class="btn btn-warning btn-sm me-2">RECHAZAR</a> <br><br>
                 </td>
             </tr>
-        <?php endforeach; ?>
+        <?php }
+    endforeach; ?>
 
     </tbody>
 </table>
