@@ -53,7 +53,7 @@
 }
    ?> 
 
-<h3 class="my-3" id="titulo" align="center"> PANEL EDITAR </h3> 
+<h3 class="my-3" id="titulo" align="center"> PANEL BORRADOR </h3> 
 
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
@@ -62,35 +62,30 @@
             <th scope="col">Descripcion</th>
             <th scope="col">Categoria</th>
             <th scope="col">Imagen</th>
-            <th scope="col"></th>
+            <th scope="col">Estado</th>
 
         </tr>
     </thead>
 
     <tbody>
-    <?php if($_SESSION['rol']=='Editor'){
-       foreach ($noticias as $not) : 
-          if( $not['usuario'] == $_SESSION['usuario'] && $not['estado']=='borrador') {
+
+        <?php foreach ($editar as $edit) : 
+          if( $edit['usuario'] == $_SESSION['usuario'] && $edit['estado']=='borrador') {
+            
         ?>
             <tr>
-                <td><?= $not['titulo']; ?></td>
-                <td><?= $not['descripcion']; ?></td>
-                <td><?= $not['categoria']; ?></td>
-                <td><?= $not['img']; ?></td>
+                <td><?= $edit['titulo']; ?></td>
+                <td><?= $edit['descripcion']; ?></td>
+                <td><?= $edit['categoria']; ?></td>
+                <td><?= $edit['img']; ?></td>
             
                 <td>
-                    <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a>
+                    <a href="<?php echo base_url('noticias/' . $edit['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">DESCARTAR </a>
+                    <a href="<?php echo base_url('noticias/' . $edit['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">ANULAR</a>
                 </td>
             </tr>
         <?php }
-       endforeach; 
-       }else{
-        ?>
-        
-        <?php
-       } ?>
-    }
-   
+       endforeach; ?>
 
     </tbody>
 </table>

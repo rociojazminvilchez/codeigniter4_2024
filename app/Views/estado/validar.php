@@ -34,11 +34,7 @@
   <!-- PERFIL EDITOR | VALIDADOR  -->   
   <div class="container text-center">
   <div class="row">
-    <!--
-    <div class="col">
-      <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
-    </div>
-    -->
+    
     <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/corregir')?>" role="button">CORRECI&OacuteN</a>
     </div>
@@ -81,9 +77,8 @@
             </tr>
         <?php }
     endforeach; ?>
-
     </tbody>
-</table>
+</table><br><br><br>
 
 <?= $this->endSection(); ?>
 

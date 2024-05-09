@@ -18,17 +18,15 @@ class Editar extends BaseController
     public function show($id = null) {
         $noticiasModel = new NoticiasModel();
         $data['not'] = $noticiasModel->find($id);
-        return view('mostrar/editada', $data);
+        return view('mostrar/panel_editada', $data);
     }
 
-    public function new()
-    {
+    public function new() {
         //
     }
 
 
-    public function create()
-    {
+    public function create(){
         $reglas = [
             'titulo'           => 'required|min_length[3]',
             'descripcion' => 'required',
@@ -74,5 +72,13 @@ class Editar extends BaseController
     public function delete($id = null)
     {
         //
+    }
+
+    public function borrador($id=null){
+
+        $editarModel = new EditarModel();
+        $resultado = $editarModel->find($id);
+        $data = ['editar' => $resultado];
+        return view('estado/borrador', $data);
     }
 }

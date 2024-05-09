@@ -27,7 +27,11 @@ class Noticias extends BaseController
 
     public function show($id = null)
     {
-    
+       
+
+        $noticiasModel = new NoticiasModel();
+        $data['not'] = $noticiasModel->find($id);
+        return view('mostrar/noticia_id',$data);
     }
 
     public function new()
@@ -161,18 +165,34 @@ class Noticias extends BaseController
 
 #Categorias
     public function economia(){
-        return view('/categorias/economia');
+        $noticiasModel = new NoticiasModel();
+        $resultado = $noticiasModel->findAll();
+
+        $data = ['noticias' => $resultado];
+        return view('/categorias/economia',$data);
     }
 
     public function politica(){
-        return view('/categorias/politica');
+        $noticiasModel = new NoticiasModel();
+        $resultado = $noticiasModel->findAll();
+
+        $data = ['noticias' => $resultado];
+        return view('/categorias/politica',$data);
     }
 
     public function turismo(){
-        return view('/categorias/turismo');
+        $noticiasModel = new NoticiasModel();
+        $resultado = $noticiasModel->findAll();
+
+        $data = ['noticias' => $resultado];
+        return view('/categorias/turismo' ,$data);
     }
     public function deporte(){
-        return view('/categorias/deporte');
+        $noticiasModel = new NoticiasModel();
+        $resultado = $noticiasModel->findAll();
+
+        $data = ['noticias' => $resultado];
+        return view('/categorias/deporte' ,$data);
     }
 
 #HISTORIAL
@@ -189,14 +209,6 @@ class Noticias extends BaseController
         return view('mostrar/original');
     }
 
-    public function borrador(){
-        return view('/panel/borrador');
-    }
-
-    public function correcion(){
-        return view('/estado/correcion');
-    }
-
     public function validar(){
         $noticiasModel = new NoticiasModel();
         $resultado = $noticiasModel->findAll();
@@ -205,14 +217,8 @@ class Noticias extends BaseController
         return view('/estado/validar', $data);
     }
 
-    public function mostrar_noticia()
-    {
-        
-        $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
-
-        $data = ['noticias' => $resultado];
-        return view('/mostrar/noticia_id' ,$data);
+    public function mostrar_noticia($id=null) {
+     
     }
 
 //Cerrar sesion

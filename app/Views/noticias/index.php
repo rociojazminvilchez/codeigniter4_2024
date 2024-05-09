@@ -30,8 +30,7 @@
 </div>
 <?php }
 endforeach; ?>
-<br><br>
-
+<br><br><br>
 </body>
 
 <?php echo $this->endSection();?>

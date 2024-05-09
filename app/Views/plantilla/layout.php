@@ -17,49 +17,46 @@
 </head>
 
 <header>
-<nav>
+
+<nav style="position:relative; display:block;">
     <div class="grid-container" >
       <div class="grid-item" style="text-align: left;">
       <a href="<?= base_url('noticias'); ?>">
         <img alt="logo" src="http://localhost/codeigniter4_2024/assets/imagenes/logo.png">
       </a>
       </div>
-
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="grid-item" style="text-align: center;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!--
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+-->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/economia')?>">Economia</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/economia')?>" style=" font-family: Times New Roman; font-size: 25px;">Economia |</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/politica')?>">Politica</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/politica')?>" style=" font-family: Times New Roman; font-size: 25px;">Politica |</a>
         </li>
     
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/turismo')?>">Turismo</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/turismo')?>" style=" font-family: Times New Roman; font-size: 25px;">Turismo |</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/deporte')?>">Deporte</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/../categorias/deporte')?>" style=" font-family: Times New Roman; font-size: 25px;"> Deporte</a>
         </li>
       </ul>
-      <!--
-<form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="¿Qu&eacute est&aacute;s buscando?" aria-label="Search">
-        <button class="btn btn-outline-info" type="submit">Buscar</button>
-      </form>
--->
+
     </div>
-  </div>
+  </div></div>
 
-
-    <div class="grid-item" style="text-align: right; padding: 20px;">
+    <div class="grid-item" style="text-align: right;">
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
