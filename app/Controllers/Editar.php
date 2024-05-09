@@ -10,14 +10,12 @@ use App\Models\EditarModel;
 
 class Editar extends BaseController
 {
-    public function index()
-    {
+    public function index() {
         //
     }
 
 
-    public function show($id = null)
-    {
+    public function show($id = null) {
         $noticiasModel = new NoticiasModel();
         $data['not'] = $noticiasModel->find($id);
         return view('mostrar/editada', $data);
@@ -32,20 +30,16 @@ class Editar extends BaseController
     public function create()
     {
         $reglas = [
-
             'titulo'           => 'required|min_length[3]',
             'descripcion' => 'required',
             'categoria'     => 'required',
-
         ];
 
         if (!$this->validate($reglas)) {
             return redirect()->back()->withInput()->with('error', $this->validator->listErrors());
         }
 
-
-     
-        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria','usuario','editor']);
+        $post = $this->request->getPost(['id','titulo', 'descripcion','estado', 'categoria','img','usuario','editor']);
 
         $editarModel = new EditarModel();
 
@@ -53,7 +47,8 @@ class Editar extends BaseController
             'id' => $post['id'],
             'titulo'            => trim($post['titulo']),
             'descripcion'           => trim($post['descripcion']),
-            'categoria'         => $post['categoria'],
+            'estado'         => $post['estado'],
+            'categoria' => $post['categoria'],
             'usuario'         => $post['usuario'],
             'editor' => $post['editor'],
             #'img' => $file,

@@ -14,11 +14,9 @@ use App\Models\HistorialModel;
 
 class Noticias extends BaseController
 {
-   
 
     public function index()
     {
-        
         $noticiasModel = new NoticiasModel();
         $resultado = $noticiasModel->findAll();
 
@@ -93,7 +91,7 @@ class Noticias extends BaseController
         $resultado = $noticiasModel->findAll();
 
         $data = ['noticias' => $resultado];
-        return view('noticias/mostrar' ,$data);
+        return view('noticias/mostrar',$data);
     }
      
     public function login()
@@ -134,10 +132,8 @@ class Noticias extends BaseController
         return view('estado/editar',$data);
     }
 
-    public function edit($id = null )
-    {
-       
-        if ($id == null) {
+    public function edit($id = null ){
+       if ($id == null) {
             return redirect()->route('noticias');
         }
 
@@ -190,7 +186,6 @@ class Noticias extends BaseController
     
     public function original( )
     {
-        
         return view('mostrar/original');
     }
 
@@ -208,6 +203,16 @@ class Noticias extends BaseController
 
         $data = ['noticias' => $resultado];
         return view('/estado/validar', $data);
+    }
+
+    public function mostrar_noticia()
+    {
+        
+        $noticiasModel = new NoticiasModel();
+        $resultado = $noticiasModel->findAll();
+
+        $data = ['noticias' => $resultado];
+        return view('/mostrar/noticia_id' ,$data);
     }
 
 //Cerrar sesion

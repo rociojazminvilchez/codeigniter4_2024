@@ -11,7 +11,7 @@
 <div class="container text-center">
   <div class="row">
     <div class="col">
-      <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
+      <a class="btn btn-primary" href="<?php echo base_url('noticias/mostrar')?>" role="button">HISTORIAL</a>
     </div>
     <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>
@@ -66,8 +66,10 @@
 
     <tbody>
 
-        <?php foreach ($noticias as $not) : ?>
-
+        <?php foreach ($noticias as $not) : 
+          if( $not['usuario'] == $_SESSION['usuario'] && $not['estado']=='borrador') {
+            
+        ?>
             <tr>
                 <td><?= $not['titulo']; ?></td>
                 <td><?= $not['descripcion']; ?></td>
@@ -78,7 +80,8 @@
                     <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a>
                 </td>
             </tr>
-        <?php endforeach; ?>
+        <?php }
+       endforeach; ?>
 
     </tbody>
 </table>

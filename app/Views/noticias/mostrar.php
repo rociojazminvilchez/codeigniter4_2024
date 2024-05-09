@@ -13,6 +13,9 @@
       <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
     </div>
     <div class="col">
+      <a class="btn btn-primary" href="<?php echo base_url('/estado/borrador')?>" role="button">BORRADOR</a>
+    </div>
+    <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>
     </div>
   </div>
@@ -62,7 +65,6 @@
             <th scope="col">Imagen</th>
             <th scope="col">Usuario</th>
             <th scope="col"></th>
-
         </tr>
     </thead>
 
@@ -76,7 +78,7 @@
                 <td><?= $not['estado']; ?></td>
                 <td><?= $not['categoria']; ?></td>
                 <td><?= $not['img']; ?></td>
-                <td><?= $_SESSION['usuario'] ?></td>
+                <td><?= $not['usuario']; ?></td>
                 <td>
                     <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>
                 </td>
@@ -84,26 +86,6 @@
         <?php endforeach; ?>
 
     </tbody>
-</table>
+</table><br><br><br><br>
 
-<?= $this->endSection(); ?>
-<!--
-<?= $this->section('script'); ?>
-
-<script>
-    const eliminaModal = document.getElementById('eliminaModal')
-    if (eliminaModal) {
-        eliminaModal.addEventListener('show.bs.modal', event => {
-            // Button that triggered the modal
-            const button = event.relatedTarget
-            // Extract info from data-bs-* attributes
-            const url = button.getAttribute('data-bs-url')
-
-            // Update the modal's content.
-            const form = eliminaModal.querySelector('#form-elimina')
-            form.setAttribute('action', url)
-        })
-    }
-</script>
--->
 <?= $this->endSection(); ?>
