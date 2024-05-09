@@ -49,7 +49,7 @@
    ?> 
 </p>
 
-<h3 class="my-3" id="titulo" align="center"> PANEL CORRECI&OacuteN </h3> 
+<h3 class="my-3" id="titulo" style="margin: 20px;font-family: 'Times New Roman', serif;"> PANEL CORRECI&OacuteN </h3> 
 
 
 

@@ -51,9 +51,9 @@
 </div>
 <?php 
 }
-   ?> 
+?> 
 
-<h3 class="my-3" id="titulo" align="center"> PANEL EDITAR </h3> 
+<h3 class="my-3" id="titulo" style="margin: 20px;font-family: 'Times New Roman', serif;"> PANEL EDITAR </h3> 
 
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
@@ -63,7 +63,6 @@
             <th scope="col">Categoria</th>
             <th scope="col">Imagen</th>
             <th scope="col"></th>
-
         </tr>
     </thead>
 
@@ -89,7 +88,7 @@
         
         <?php
        } ?>
-    }
+    
    
 
     </tbody>

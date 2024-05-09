@@ -141,11 +141,7 @@
   </div>
   </div> 
 
-  <div class="grid-item footer" style="text-align: right ;">
-    <a href=".pdf" TARGET="_blank">
-      Preguntas frecuentes
-    </a>
-     </div>
+
 </div>
 </footer>
 </html>
