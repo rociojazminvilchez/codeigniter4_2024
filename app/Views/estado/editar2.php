@@ -20,7 +20,7 @@
           <h2 class="panel-title"><center><font size="5"><i class='glyphicon glyphicon-user'></i>EDITAR</font></center></h2>
           <div class="panel-body">
             <div class="row">  
-              <div class="col-md-3 col-lg-3 " align="center"> 
+              <div class="col-md-3 col-lg-3 " style="text-align:center;"> 
 				        <div id="load_img">
 					        <img class="img-responsive" src=" <?= $not['id']; ?>" alt="Logo" width=100px height=100px>
                 </div><br>				

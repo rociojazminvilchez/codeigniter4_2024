@@ -15,8 +15,7 @@ use App\Models\HistorialModel;
 class Noticias extends BaseController
 {
 
-    public function index()
-    {
+    public function index() {
         $noticiasModel = new NoticiasModel();
         $resultado = $noticiasModel->findAll();
 
@@ -25,14 +24,9 @@ class Noticias extends BaseController
         return view('noticias/index',$data);
     }
 
-    public function show($id = null)
-    {
-       
-
-        $noticiasModel = new NoticiasModel();
-        $data['not'] = $noticiasModel->find($id);
-        return view('mostrar/noticia_id',$data);
-    }
+    //MOSTRAR -> NOTICIA DEL INDEX
+    
+   
 
     public function new()
     {
@@ -97,7 +91,18 @@ class Noticias extends BaseController
         $data = ['noticias' => $resultado];
         return view('noticias/mostrar',$data);
     }
+
+    public function show($id = null){
+
+    }
      
+    public function mostrar_noticia($id = null){
+        
+        $noticiasModel = new NoticiasModel();
+        $data['not'] = $noticiasModel->find($id);
+        return view('mostrar/noticia_id', $data);
+    } 
+
     public function login()
     {
         $usuario = $this->request->getPost('usuario');    
@@ -215,10 +220,6 @@ class Noticias extends BaseController
 
         $data = ['noticias' => $resultado];
         return view('/estado/validar', $data);
-    }
-
-    public function mostrar_noticia($id=null) {
-     
     }
 
 //Cerrar sesion

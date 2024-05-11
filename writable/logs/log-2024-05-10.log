@@ -1,0 +1,14 @@
+INFO - 2024-05-10 19:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-10 23:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-10 23:16:52 --> ErrorException: Undefined variable $noticias
+in APPPATH\Views\mostrar\noticia_id.php on line 6.
+ 1 APPPATH\Views\mostrar\noticia_id.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $noticias', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\mostrar\\noticia_id.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\mostrar\\noticia_id.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mostrar/noticia_id', [], true)
+ 5 APPPATH\Controllers\Noticias.php(34): view('mostrar/noticia_id', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->show()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-10 23:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
