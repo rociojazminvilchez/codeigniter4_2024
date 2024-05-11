@@ -91,7 +91,9 @@
             }else{
               ?>
             <li><a class="dropdown-item" href="<?= base_url('/noticias/ingreso'); ?>">Iniciar sesión</a></li>
+           <!--
             <li><a class="dropdown-item" href="<?php echo base_url('noticias/new')?>">Crear noticia</a></li>
+            -->
           <?php
           }
           ?>         

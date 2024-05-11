@@ -80,7 +80,7 @@
                 <td><?= $not['img']; ?></td>
                 <td><?= $not['usuario']; ?></td>
                 <td>
-                    <a href="<?php echo base_url('noticias/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>
+                    <a href="<?php echo base_url('mostrar/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>
                 </td>
             </tr>
         <?php endforeach; ?>

@@ -15,7 +15,7 @@ $routes->get('/noticias/recuperar_contra', 'Noticias::recuperar');
 
 #HISTORIAL
 
-$routes->get('/noticias/(:num)/historial', 'Noticias::historial');
+$routes->get('/mostrar/(:num)/historial', 'Noticias::historial/$1');
 $routes->get('/estado/editar', 'Noticias::editar');
 
 #categorias
@@ -36,5 +36,5 @@ $routes->resource('noticias', ['placeholder' => '(:num)', 'except' => 'show']);
 $routes->resource('editar', ['placeholder' => '(:num)', 'except' => 'show']);
 $routes->resource('corregir', ['placeholder' => '(:num)', 'except' => 'show']);
 
-#ejemplo
+#Mostrar noticia ID
 $routes->get('/mostrar/(:num)/noticia_id', 'Noticias::mostrar_noticia/$1');

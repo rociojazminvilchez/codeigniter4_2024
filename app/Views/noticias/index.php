@@ -8,11 +8,11 @@
 <?php foreach ($noticias as $not) :  
   if($not['estado']=='borrador'){
 ?>
+
 <div style = "text-align:center;">
 <div class="col-md-4">
   <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
     <div class="col p-2 d-flex flex-column position-static">
-
       <strong class="d-inline-block mb-2 text-primary-emphasis"><?= $not['categoria']; ?></strong>
       <h3 class="mb-0"><?= $not['titulo']; ?></h3><br>
   
@@ -25,11 +25,13 @@
     </div>
 
     </div>
- </div>
+  </div>
 </div>
 </div>
+
 <?php }
 endforeach; ?>
+
 <br><br><br>
 </body>
 

@@ -47,9 +47,10 @@ class Noticias extends BaseController
             return redirect()->back()->withInput()->with('error', $this->validator->listErrors());
         }
 
+  
         #archivos
         /*
-        $config['upload_path']   = 'asset/img/productos/';
+        $config['upload_path']   = '';
     $config['allowed_types'] = 'gif|jpg|png';
     $config['overwrite']     = true;
     $config['encrypt_name']  = false;
@@ -75,7 +76,6 @@ class Noticias extends BaseController
             'descripcion'           => trim($post['descripcion']),
             'estado' => $post['estado'],
             'categoria'         => $post['categoria'],
-            
             
         ]);
 
@@ -201,12 +201,12 @@ class Noticias extends BaseController
     }
 
 #HISTORIAL
-
     public function historial($id = null){
-        print_r ($id);
-        exit;
-        
-        return view('/noticias/historial');
+
+        $noticiasModel = new NoticiasModel();
+
+        $data['not'] = $noticiasModel->find($id);
+        return view('/mostrar/historial', $data);
     }
     
     public function original( )

@@ -8,7 +8,13 @@
   function dias_pasados($fecha_inicial,$fecha_final){
     $dias = (strtotime($fecha_inicial)-strtotime($fecha_final))/86400;
     $dias = abs($dias); $dias = floor($dias);
+    
     return $dias;
+}
+
+function modificar_fecha ($fecha_inicial){
+  $fecha_modificada = date("d/m/Y", strtotime($fecha_inicial));
+  return $fecha_modificada;
 }
 ?>
 <br>
@@ -20,10 +26,19 @@
     </div>
     <div class="col-8">
      
-    <div class="card text-center">
-  <div class="card-header" style = "text-align:left;">
-  <?php echo $not['categoria']; ?>
+ <div class="card text-center">
+    <div class="card-header" style = "text-align:right;">
+  <?php 
+    $fecha_inicial=  $not['fecha'];
+    $fecha = modificar_fecha($fecha_inicial);
+    echo $fecha; 
+  ?>
   </div>
+  <div class="card-header" style = "text-align:left; font-weight: bold;">
+    <?php echo $not['categoria'];  ?>
+  </div>
+
+
 
   <div class="card-body">
     <h5 class="card-title"> <?php echo $not['titulo']; ?> </h5>
