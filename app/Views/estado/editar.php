@@ -6,7 +6,7 @@
 <p>
 <?php             
     if ($_SESSION['rol'] =='Editor') {
-            ?>
+?>
 <!-- PERFIL EDITOR -->            
 <div class="container text-center">
   <div class="row">
@@ -79,7 +79,8 @@
             
                 <td>
                     <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a>
-                </td>
+              
+                  </td>
             </tr>
         <?php }
        endforeach; 
@@ -93,5 +94,10 @@
 
     </tbody>
 </table>
-
+<script>
+  function saludar(){
+  }
+  
+</script>
 <?= $this->endSection(); ?>
+

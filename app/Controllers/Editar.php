@@ -53,7 +53,7 @@ class Editar extends BaseController
             
         ]);
        
-        return redirect()->to('noticias');
+        return redirect()->to('noticias/mostrar');
     }
 
 

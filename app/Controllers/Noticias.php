@@ -82,7 +82,13 @@ class Noticias extends BaseController
         return redirect()->to('noticias');
     }
 
-   
+    public function update($id = null)
+    {
+        //
+    }
+
+
+
     public function mostrar()
     {
         $noticiasModel = new NoticiasModel();
