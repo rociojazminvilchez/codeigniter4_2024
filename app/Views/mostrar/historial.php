@@ -8,8 +8,7 @@
         <?= session()->getFlashdata('error'); ?>
     </div>
 <?php } ?>
-
-<h3 class="my-3" id="titulo" style="font-weight: bold;text-align:center;"> Historial </h3> 
+<h3 class="my-3" id="titulo" style="margin: 20px;font-family: 'Times New Roman', serif;"> HISTORIAL </h3>  
 
 <table style="width: 100%;">
 <tr>
