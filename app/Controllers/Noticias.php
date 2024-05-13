@@ -42,7 +42,6 @@ class Noticias extends BaseController
             return redirect()->back()->withInput()->with('error', $this->validator->listErrors());
         }
 
-  
         #archivos
        $file = $this->request->getFile('image');
        if($file->isValid() && ! $file->hasMoved()){
@@ -101,6 +100,12 @@ class Noticias extends BaseController
         return view('estado/corregir_v', $data);
     }
 
+#ESTADO - DESHACER
+    public function deshacer($id=null){
+        $noticiasModel = new NoticiasModel();
+        $data['not']= $noticiasModel->find($id);
+        return view('estado/deshacer_v', $data);
+    }
 
     public function mostrar()    {
         $noticiasModel = new NoticiasModel();

@@ -72,10 +72,12 @@
                     <a href="<?php echo base_url('estado/' . $not['id'].'/publicar'); ?>" class="btn btn-warning btn-sm me-2">PUBLICAR</a><br><br>
                     <a href="<?php echo base_url('estado/' . $not['id'].'/corregir_v'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a> <br><br>
                     <a href="<?php echo base_url('estado/' . $not['id'].'/descartar_v'); ?>" class="btn btn-warning btn-sm me-2">RECHAZAR</a> <br><br>
+                    <a href="<?php echo base_url('estado/' . $not['id'].'/deshacer_v'); ?>" class="btn btn-warning btn-sm me-2">DESHACER</a> <br><br>
                 </td>
             </tr>
         <?php }
     endforeach; ?>
+    
     </tbody>
 </table><br><br><br>
 
