@@ -43,7 +43,7 @@ function modificar_fecha ($fecha_inicial){
   <div class="card-body">
     <h5 class="card-title"> <?php echo $not['titulo']; ?> </h5>
     <div class="col-auto d-none d-lg-block" style = "text-align:center;">
-      <svg class="bd-placeholder-img" width="250" height="250"  role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Imagen</text></svg>
+    <img src="<?= "uploads/".$not['img']; ?>" alt="Imagen" width="250" height="250">
     </div><br>
 
     <p class="card-text"> <?php echo $not['descripcion']; ?> </p>

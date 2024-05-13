@@ -28,13 +28,11 @@ class Noticias extends BaseController
     
    
 
-    public function new()
-    {
+    public function new(){
         return view('noticias/nuevo');
     }
 
-    public function create()
-    {
+    public function create(){
         $reglas = [
             'titulo'           => 'required|min_length[3]',
             'descripcion' => 'required',
@@ -49,24 +47,12 @@ class Noticias extends BaseController
 
   
         #archivos
-        /*
-        $config['upload_path']   = '';
-    $config['allowed_types'] = 'gif|jpg|png';
-    $config['overwrite']     = true;
-    $config['encrypt_name']  = false;
-    $config['remove_spaces'] = true;
-    if (!is_dir($config['upload_path'])) {
-        die("El directorio de carga no existe");
-    }
-    $this->load->library('upload', $config);
-    if (!$this->upload->do_upload('image')) {
-        echo 'error';
-    }
-    else {
-        $ruta_archivo =['upload_data' => $this->upload->data()];
-    }
-         */
-
+       $file = $this->request->getFile('image');
+       if($file->isValid() && ! $file->hasMoved()){
+        $imageName = $file->getRandomName();
+        $file->move('uploads/', $imageName);
+       }
+        
         $post = $this->request->getPost(['titulo', 'descripcion', 'estado', 'categoria']);
     
         $noticiasModel = new NoticiasModel();
@@ -76,21 +62,17 @@ class Noticias extends BaseController
             'descripcion'           => trim($post['descripcion']),
             'estado' => $post['estado'],
             'categoria'         => $post['categoria'],
-            
+            'img' => $imageName,
         ]);
 
         return redirect()->to('noticias');
     }
 
-    public function update($id = null)
-    {
+    public function update($id = null){
         //
     }
 
-
-
-    public function mostrar()
-    {
+    public function mostrar()    {
         $noticiasModel = new NoticiasModel();
         $resultado = $noticiasModel->findAll();
 
@@ -109,8 +91,7 @@ class Noticias extends BaseController
         return view('mostrar/noticia_id', $data);
     } 
 
-    public function login()
-    {
+    public function login(){
         $usuario = $this->request->getPost('usuario');    
         $contra = $this->request->getPost('contra');
         $tipo = $this->request->getPost('tipo');
@@ -215,10 +196,10 @@ class Noticias extends BaseController
         return view('/mostrar/historial', $data);
     }
     
-    public function original( )
-    {
+    /*
+    public function original( ){
         return view('mostrar/original');
-    }
+    }*/
 
     public function validar(){
         $noticiasModel = new NoticiasModel();

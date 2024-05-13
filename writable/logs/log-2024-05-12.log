@@ -140,3 +140,310 @@ INFO - 2024-05-12 21:40:48 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-05-12 21:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-12 21:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-12 21:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 21:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 21:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 21:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 21:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-12 21:55:52 --> ParseError: Unclosed '{' on line 72
+in APPPATH\Views\estado\editar.php on line 107.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/editar', [...], true)
+ 3 APPPATH\Controllers\Noticias.php(152): view('estado/editar', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->editar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-12 21:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 21:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-12 21:57:26 --> ErrorException: Undefined variable $editar
+in APPPATH\Views\estado\editar.php on line 90.
+ 1 APPPATH\Views\estado\editar.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $editar', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\editar.php', 90)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/editar', [...], true)
+ 5 APPPATH\Controllers\Noticias.php(152): view('estado/editar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->editar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-12 21:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-12 21:57:55 --> ErrorException: Undefined variable $editar
+in APPPATH\Views\estado\editar.php on line 90.
+ 1 APPPATH\Views\estado\editar.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $editar', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\editar.php', 90)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/editar', [...], true)
+ 5 APPPATH\Controllers\Noticias.php(152): view('estado/editar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->editar('$1', '$2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-12 21:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-12 21:57:56 --> ErrorException: Undefined variable $editar
+in APPPATH\Views\estado\editar.php on line 90.
+ 1 APPPATH\Views\estado\editar.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $editar', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\editar.php', 90)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/editar', [...], true)
+ 5 APPPATH\Controllers\Noticias.php(152): view('estado/editar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->editar('$1', '$2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-12 21:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-12 22:47:40 --> mysqli_sql_exception: Duplicate entry '13' for key 'PRIMARY' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Editar.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Editar->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-12 22:47:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '13' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :estado:, :categoria:, :usuario:, :editor:, :fecha:, :fecha_modificada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Editar.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-12 22:47:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '13' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'En este singular pasaje de la comarca de las Cinco Villas de Aragón, sólo puede pasar una persona si se pone de lado\', \'seleccione\', \'seleccione\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-12 22:47:40\', \'2024-05-12 22:47:40\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'En este singular pasaje de la comarca de las Cinco Villas de Aragón, sólo puede pasar una persona si se pone de lado\', \'seleccione\', \'seleccione\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-12 22:47:40\', \'2024-05-12 22:47:40\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :estado:, :categoria:, :usuario:, :editor:, :fecha:, :fecha_modificada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Editar.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-12 22:47:40 --> [Caused by] mysqli_sql_exception: Duplicate entry '13' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'En este singular pasaje de la comarca de las Cinco Villas de Aragón, sólo puede pasar una persona si se pone de lado\', \'seleccione\', \'seleccione\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-12 22:47:40\', \'2024-05-12 22:47:40\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'En este singular pasaje de la comarca de las Cinco Villas de Aragón, sólo puede pasar una persona si se pone de lado\', \'seleccione\', \'seleccione\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-12 22:47:40\', \'2024-05-12 22:47:40\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'En este singular pasaje de la comarca de las Cinco Villas de Aragón, sólo puede pasar una persona si se pone de lado\', \'seleccione\', \'seleccione\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-12 22:47:40\', \'2024-05-12 22:47:40\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :estado:, :categoria:, :usuario:, :editor:, :fecha:, :fecha_modificada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Editar.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-12 22:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-12 22:49:05 --> TypeError: view(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Editar.php on line 56
+in SYSTEMPATH\Common.php on line 1166.
+ 1 APPPATH\Controllers\Editar.php(56): view('mostrar/actualizar', ' 13')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-12 22:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-12 22:50:17 --> mysqli_sql_exception: Duplicate entry '13' for key 'PRIMARY' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ed...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ed...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ed...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ed...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Editar.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Editar->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-12 22:50:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '13' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :estado:, :categoria:, :usuario:, :editor:, :fecha:, :fecha_modificada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Editar.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-12 22:50:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '13' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'En este singular pasaje de la comarca de las Cinco Villas de Aragón, sólo puede pasar una persona si se pone de lado\', \'seleccione\', \'seleccione\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-12 22:50:17\', \'2024-05-12 22:50:17\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'En este singular pasaje de la comarca de las Cinco Villas de Aragón, sólo puede pasar una persona si se pone de lado\', \'seleccione\', \'seleccione\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-12 22:50:17\', \'2024-05-12 22:50:17\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :estado:, :categoria:, :usuario:, :editor:, :fecha:, :fecha_modificada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Editar.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-12 22:50:17 --> [Caused by] mysqli_sql_exception: Duplicate entry '13' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'En este singular pasaje de la comarca de las Cinco Villas de Aragón, sólo puede pasar una persona si se pone de lado\', \'seleccione\', \'seleccione\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-12 22:50:17\', \'2024-05-12 22:50:17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'En este singular pasaje de la comarca de las Cinco Villas de Aragón, sólo puede pasar una persona si se pone de lado\', \'seleccione\', \'seleccione\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-12 22:50:17\', \'2024-05-12 22:50:17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'En este singular pasaje de la comarca de las Cinco Villas de Aragón, sólo puede pasar una persona si se pone de lado\', \'seleccione\', \'seleccione\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-12 22:50:17\', \'2024-05-12 22:50:17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `editar` (`id`, `titulo`, `descripcion`, `estado`, `categoria`, `usuario`, `editor`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :estado:, :categoria:, :usuario:, :editor:, :fecha:, :fecha_modificada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Editar.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-12 22:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 22:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-12 23:15:09 --> ErrorException: Undefined array key "noticias"
+in APPPATH\Controllers\Noticias.php on line 147.
+ 1 APPPATH\Controllers\Noticias.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "noticias"', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Controllers\\Noticias.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->editar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-12 23:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-12 23:21:38 --> mysqli_sql_exception: Unknown table 'empresatecnologica.editar' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `noticia...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `noticia...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `noticia...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `noticia...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Noticias.php(147): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Noticias->editar()
+#6 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+#7 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-12 23:21:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'empresatecnologica.editar'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `noticias`.*, `editar`.*
+FROM `noticias`', [], false)
+ 2 APPPATH\Controllers\Noticias.php(147): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->editar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-12 23:21:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'empresatecnologica.editar'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `noticias`.*, `editar`.*
+FROM `noticias`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `noticias`.*, `editar`.*
+FROM `noticias`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `noticias`.*, `editar`.*
+FROM `noticias`', [], false)
+ 4 APPPATH\Controllers\Noticias.php(147): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->editar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-12 23:21:38 --> [Caused by] mysqli_sql_exception: Unknown table 'empresatecnologica.editar'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `noticias`.*, `editar`.*
+FROM `noticias`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `noticias`.*, `editar`.*
+FROM `noticias`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `noticias`.*, `editar`.*
+FROM `noticias`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `noticias`.*, `editar`.*
+FROM `noticias`', [], false)
+ 5 APPPATH\Controllers\Noticias.php(147): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Noticias->editar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-12 23:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 23:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

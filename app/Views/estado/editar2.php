@@ -72,8 +72,6 @@
             <div class="panel-footer text-center">          
                 <button type="submit" name="editar" class="btn btn-sm btn-success" style="background-color: #3366cc;">GUARDAR CAMBIOS</button>
               <br><br>
-              
-
             </div>    
       </div>
     </div>

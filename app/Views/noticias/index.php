@@ -17,7 +17,7 @@
       <h3 class="mb-0"><?= $not['titulo']; ?></h3><br>
   
     <div class="col-auto d-none d-lg-block" style = "text-align:center;">
-      <svg class="bd-placeholder-img" width="150" height="150"  role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Imagen</text></svg>
+    <img src="<?= "uploads/".$not['img']; ?>" alt="Imagen" width="150" height="150">
     </div><br>
  
     <div class="col">

@@ -77,7 +77,14 @@
                 <td><?= $not['descripcion']; ?></td>
                 <td><?= $not['estado']; ?></td>
                 <td><?= $not['categoria']; ?></td>
-                <td><?= $not['img']; ?></td>
+                <td>
+                  <?php if($not['img']!=''){
+                  ?>
+                   <img src="<?="uploads/".$not['img']; ?>" alt="Imagen" width="100" height="100">
+                  <?php
+                  }
+                 ?>
+                </td>
                 <td><?= $not['usuario']; ?></td>
                 <td>
                     <a href="<?php echo base_url('mostrar/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>

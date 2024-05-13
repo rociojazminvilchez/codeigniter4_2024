@@ -84,20 +84,10 @@
             </tr>
         <?php }
        endforeach; 
-       }else{
-        ?>
-        
-        <?php
-       } ?>
-    
-   
-
+      }
+       ?>
     </tbody>
 </table>
-<script>
-  function saludar(){
-  }
-  
-</script>
+
 <?= $this->endSection(); ?>
 

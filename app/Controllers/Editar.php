@@ -36,7 +36,14 @@ class Editar extends BaseController
         if (!$this->validate($reglas)) {
             return redirect()->back()->withInput()->with('error', $this->validator->listErrors());
         }
-
+        
+        #archivos
+        $file = $this->request->getFile('image');
+        if($file->isValid() && ! $file->hasMoved()){
+            $imageName = $file->getRandomName();
+            $file->move('uploads/', $imageName);
+     }
+        
         $post = $this->request->getPost(['id','titulo', 'descripcion','estado', 'categoria','img','usuario','editor']);
 
         $editarModel = new EditarModel();
@@ -49,11 +56,11 @@ class Editar extends BaseController
             'categoria' => $post['categoria'],
             'usuario'         => $post['usuario'],
             'editor' => $post['editor'],
-            #'img' => $file,
+            'img' => $imageName,
             
         ]);
-       
-        return redirect()->to('noticias/mostrar');
+        
+        return view('mostrar/actualizar');
     }
 
 
