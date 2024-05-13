@@ -91,6 +91,7 @@ class Noticias extends BaseController
         return view('mostrar/noticia_id', $data);
     } 
 
+#INGRESAR SESION
     public function login(){
         $usuario = $this->request->getPost('usuario');    
         $contra = $this->request->getPost('contra');
@@ -112,7 +113,9 @@ class Noticias extends BaseController
 
             return redirect()->to('noticias');
         }else{
-            echo("Usuario o contraseña incorrecta");
+            ?>
+            <h4 style="text-decoration: solid; text-align:center; color:red;"> Datos incorrectos. Ingrese nuevamente </h4>
+            <?php
             return view('noticias/ingreso');
         }
     }

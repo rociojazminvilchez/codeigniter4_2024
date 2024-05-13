@@ -58,6 +58,7 @@
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
         <tr>
+            <th scope="col">Estado</th>
             <th scope="col">Titulo</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Categoria</th>
@@ -69,17 +70,26 @@
     <tbody>
     <?php if($_SESSION['rol']=='Editor'){
        foreach ($noticias as $not) : 
-          if( $not['usuario'] == $_SESSION['usuario'] && $not['estado']=='borrador') {
+          if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado']=='borrador' || $not['estado']=='corregir')) {
         ?>
             <tr>
+                <td><?= $not['estado']; ?></td>
                 <td><?= $not['titulo']; ?></td>
                 <td><?= $not['descripcion']; ?></td>
                 <td><?= $not['categoria']; ?></td>
                 <td><?= $not['img']; ?></td>
             
                 <td>
+                  <?php if($not['estado']=='borrador'){
+                    ?>                    
                     <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a>
-              
+                  <?php
+                  }else{
+                  ?>
+                    <a href="<?php echo base_url('estado/' . $not['id']. '/corregir_editar'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a>
+                  <?php
+                  }
+                  ?>
                   </td>
             </tr>
         <?php }

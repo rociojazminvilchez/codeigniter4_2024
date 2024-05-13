@@ -80,7 +80,7 @@
                 <td><?= $edit['img']; ?></td>
             
                 <td>
-                    <a href="<?php echo base_url('noticias/' . $edit['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">DESCARTAR </a>
+                    <a href="<?php echo base_url('estado/' . $edit['id'].'/descartar'); ?>" class="btn btn-warning btn-sm me-2">DESCARTAR </a>
                     <a href="<?php echo base_url('noticias/' . $edit['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">ANULAR</a>
                 </td>
             </tr>

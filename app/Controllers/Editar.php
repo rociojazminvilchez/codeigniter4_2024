@@ -66,13 +66,23 @@ class Editar extends BaseController
 
     public function edit($id = null)
     {
-        //
+       
     }
 
 
     public function update($id = null)
     {
-        //
+        if (!$this->request->is('put') || $id == null) {
+            return redirect()->route('noticias');
+        }
+
+        $post = $this->request->getPost(['estado']);
+
+        $editarModel = new EditarModel();
+        $editarModel->update($id, [
+            'estado'=> $post['estado'],
+        ]);
+        return redirect()->route('noticias');
     }
 
 
@@ -87,5 +97,12 @@ class Editar extends BaseController
         $resultado = $editarModel->find($id);
         $data = ['editar' => $resultado];
         return view('estado/borrador', $data);
+    }
+
+    public function descartar($id=null){
+       
+        $editarModel = new EditarModel();
+        $data['edit']= $editarModel->find($id);
+        return view('estado/descartar', $data);
     }
 }

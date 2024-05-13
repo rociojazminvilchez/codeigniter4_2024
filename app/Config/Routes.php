@@ -38,3 +38,5 @@ $routes->resource('corregir', ['placeholder' => '(:num)', 'except' => 'show']);
 
 #Mostrar noticia ID
 $routes->get('/mostrar/(:num)/noticia_id', 'Noticias::mostrar_noticia/$1');
+
+$routes->get('/estado/(:num)/descartar', 'Editar::descartar/$1');

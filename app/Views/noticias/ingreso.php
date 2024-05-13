@@ -23,7 +23,6 @@
                
             Seleccione su tipo de usuario: <br>
           <select id="tipo" name="tipo" required>
-            <option value="seleccione">Seleccione...</option>
             <option value="Editor">Editor</option>
             <option value="Validador">Validador</option>
             <option value="Editor|Validador">Editor|Validador</option>

@@ -60,7 +60,7 @@ class Corregir extends BaseController
             
         ]);
        
-        return redirect()->to('estado/validar');
+        return redirect()->to('noticias');
     }
 
     public function update($id = null)

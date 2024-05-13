@@ -5,7 +5,10 @@
 <body>
 
 <br>
-<?php foreach ($noticias as $not) :  
+   
+    
+<?php foreach ($noticias as $not) : 
+ 
   if($not['estado']=='borrador'){
 ?>
 
@@ -17,12 +20,16 @@
       <h3 class="mb-0"><?= $not['titulo']; ?></h3><br>
   
     <div class="col-auto d-none d-lg-block" style = "text-align:center;">
-    <img src="<?= "uploads/".$not['img']; ?>" alt="Imagen" width="150" height="150">
+      <?php if($not['img']!=''){ ?>
+        <img src="<?= "uploads/".$not['img']; ?>" alt="Imagen" width="150" height="150">
+      <?php
+        }
+      ?>
     </div><br>
  
     <div class="col">
-        <a class="btn btn-primary" href="<?php echo base_url('mostrar/' . $not['id']. '/noticia_id'); ?>" role="button">Ver m&aacutes informaci&oacuten</a>
-    </div>
+      <a class="btn btn-primary" href="<?php echo base_url('mostrar/' . $not['id']. '/noticia_id'); ?>" role="button">Ver m&aacutes informaci&oacuten</a>
+     </div>
 
     </div>
   </div>
