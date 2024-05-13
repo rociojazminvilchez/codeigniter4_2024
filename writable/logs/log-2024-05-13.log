@@ -241,3 +241,420 @@ INFO - 2024-05-13 02:52:48 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-05-13 02:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-13 02:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-13 02:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 03:05:09 --> ErrorException: Undefined variable $not
+in APPPATH\Views\estado\corregir_editar.php on line 15.
+ 1 APPPATH\Views\estado\corregir_editar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $not', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/corregir_editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(113): view('estado/corregir_editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->corregir_editar('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 03:05:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 03:06:20 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\estado\corregir_editar.php on line 14.
+ 1 APPPATH\Views\estado\corregir_editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/corregir_editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(113): view('estado/corregir_editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->corregir_editar('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 03:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 03:07:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\estado\corregir_editar.php on line 14.
+ 1 APPPATH\Views\estado\corregir_editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/corregir_editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(113): view('estado/corregir_editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->corregir_editar('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 03:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 03:15:52 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\estado\corregir_editar.php on line 14.
+ 1 APPPATH\Views\estado\corregir_editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/corregir_editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(75): view('estado/corregir_editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 03:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 03:17:11 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\estado\corregir_editar.php on line 14.
+ 1 APPPATH\Views\estado\corregir_editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/corregir_editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(75): view('estado/corregir_editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 03:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 03:25:44 --> ErrorException: Undefined variable $noticias
+in APPPATH\Views\estado\correcion.php on line 69.
+ 1 APPPATH\Views\estado\correcion.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $noticias', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\correcion.php', 69)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\correcion.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/correcion', [], true)
+ 5 APPPATH\Controllers\Editar.php(112): view('estado/correcion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->correcion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 03:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 03:36:16 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\estado\corregir_editar.php on line 14.
+ 1 APPPATH\Views\estado\corregir_editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/corregir_editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(75): view('estado/corregir_editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 03:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 03:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 03:37:40 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\estado\corregir_editar.php on line 14.
+ 1 APPPATH\Views\estado\corregir_editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/corregir_editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(116): view('estado/corregir_editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 14:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 14:15:51 --> ErrorException: Undefined array key "estado_modificado"
+in APPPATH\Controllers\Editar.php on line 79.
+ 1 APPPATH\Controllers\Editar.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado_modificado"', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Controllers\\Editar.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->update('6')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 14:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 14:23:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\estado\corregir_editar.php on line 14.
+ 1 APPPATH\Views\estado\corregir_editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/corregir_editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(116): view('estado/corregir_editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 14:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 14:42:40 --> ErrorException: Array to string conversion
+in APPPATH\Views\estado\corregir_editar.php on line 14.
+ 1 APPPATH\Views\estado\corregir_editar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php', 14)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4_2024\\app\\Views\\estado\\corregir_editar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('estado/corregir_editar', [], true)
+ 5 APPPATH\Controllers\Editar.php(114): view('estado/corregir_editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Editar->edit('13')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Editar))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 14:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 14:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-13 15:12:23 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\Corregir.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Corregir->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 15:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-13 15:12:47 --> mysqli_sql_exception: Unknown column 'correcion' in 'field list' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Corregir.php(54): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Corregir->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-13 15:12:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correcion' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :categoria:, :estado:, :usuario:, :correcion:, :fecha:, :fecha_modificada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Corregir.php(54): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Corregir->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 15:12:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correcion' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-13 15:12:47\', \'2024-05-13 15:12:47\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-13 15:12:47\', \'2024-05-13 15:12:47\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :categoria:, :estado:, :usuario:, :correcion:, :fecha:, :fecha_modificada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Corregir.php(54): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Corregir->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 15:12:47 --> [Caused by] mysqli_sql_exception: Unknown column 'correcion' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-13 15:12:47\', \'2024-05-13 15:12:47\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-13 15:12:47\', \'2024-05-13 15:12:47\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-13 15:12:47\', \'2024-05-13 15:12:47\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :categoria:, :estado:, :usuario:, :correcion:, :fecha:, :fecha_modificada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Corregir.php(54): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Corregir->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 15:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-13 15:14:43 --> mysqli_sql_exception: Unknown column 'correcion' in 'field list' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Corregir.php(54): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Corregir->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-13 15:14:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correcion' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :categoria:, :estado:, :usuario:, :correcion:, :fecha:, :fecha_modificada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Corregir.php(54): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Corregir->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 15:14:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correcion' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-13 15:14:43\', \'2024-05-13 15:14:43\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-13 15:14:43\', \'2024-05-13 15:14:43\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :categoria:, :estado:, :usuario:, :correcion:, :fecha:, :fecha_modificada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Corregir.php(54): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Corregir->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 15:14:43 --> [Caused by] mysqli_sql_exception: Unknown column 'correcion' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-13 15:14:43\', \'2024-05-13 15:14:43\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-13 15:14:43\', \'2024-05-13 15:14:43\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', \'lucasn@gmail.com\', \'2024-05-13 15:14:43\', \'2024-05-13 15:14:43\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `correcion`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :categoria:, :estado:, :usuario:, :correcion:, :fecha:, :fecha_modificada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Corregir.php(54): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Corregir->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 15:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-13 15:23:43 --> mysqli_sql_exception: Unknown column 'usuario_correcion' in 'field list' in C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4_2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\codeigniter4_2024\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4_2024\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4_2024\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4_2024\app\Controllers\Corregir.php(54): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(941): App\Controllers\Corregir->create()
+#9 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+#10 C:\xampp\htdocs\codeigniter4_2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4_2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-13 15:23:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario_correcion' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `usuario_correcion`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :categoria:, :estado:, :usuario:, :usuario_correcion:, :fecha:, :fecha_modificada:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Corregir.php(54): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Corregir->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 15:23:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario_correcion' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `usuario_correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', NULL, \'2024-05-13 15:23:43\', \'2024-05-13 15:23:43\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `usuario_correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', NULL, \'2024-05-13 15:23:43\', \'2024-05-13 15:23:43\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `usuario_correcion`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :categoria:, :estado:, :usuario:, :usuario_correcion:, :fecha:, :fecha_modificada:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Corregir.php(54): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Corregir->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 15:23:43 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario_correcion' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `usuario_correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', NULL, \'2024-05-13 15:23:43\', \'2024-05-13 15:23:43\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `usuario_correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', NULL, \'2024-05-13 15:23:43\', \'2024-05-13 15:23:43\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `usuario_correcion`, `fecha`, `fecha_modificada`) VALUES (\' 13\', \'El pueblo que tiene la calle más estrecha de España\', \'Cinco Villas de Aragón, sólo puede p\', \'seleccione\', \'borrador\', \'lucasn@gmail.com\', NULL, \'2024-05-13 15:23:43\', \'2024-05-13 15:23:43\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `correcion` (`id`, `titulo`, `descripcion`, `categoria`, `estado`, `usuario`, `usuario_correcion`, `fecha`, `fecha_modificada`) VALUES (:id:, :titulo:, :descripcion:, :categoria:, :estado:, :usuario:, :usuario_correcion:, :fecha:, :fecha_modificada:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Corregir.php(54): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Corregir->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Corregir))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-13 15:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-13 15:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

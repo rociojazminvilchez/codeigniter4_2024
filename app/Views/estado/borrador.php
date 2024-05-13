@@ -70,7 +70,7 @@
     <tbody>
 
         <?php foreach ($editar as $edit) : 
-          if( $edit['usuario'] == $_SESSION['usuario'] && $edit['estado']=='borrador') {
+          if( $edit['usuario'] == $_SESSION['usuario'] && $edit['estado']=='borrador' && $edit['estado_modificado']=='') {
             
         ?>
             <tr>

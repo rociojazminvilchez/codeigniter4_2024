@@ -24,11 +24,13 @@ $routes->get('/categorias/turismo', 'Noticias::turismo');
 $routes->get('/categorias/deporte', 'Noticias::deporte');
 $routes->get('/categorias/politica', 'Noticias::politica');
 
-$routes->get('/estado/validar', 'Noticias::validar');
 
+#$routes->get('/estado/validar', 'Noticias::validar');
+
+//ESTADOS
 $routes->get('/estado/borrador', 'Editar::borrador');
 
-$routes->get('/estado/correcion', 'Noticias::correcion');
+$routes->get('/estado/correcion', 'Editar::correcion');
 
 $routes->get('/noticias/mostrar', 'Noticias::mostrar');
 
@@ -40,3 +42,5 @@ $routes->resource('corregir', ['placeholder' => '(:num)', 'except' => 'show']);
 $routes->get('/mostrar/(:num)/noticia_id', 'Noticias::mostrar_noticia/$1');
 
 $routes->get('/estado/(:num)/descartar', 'Editar::descartar/$1');
+
+$routes->get('/estado/(:num)/corregir_editar', 'Editar::corregir_editar/$1');

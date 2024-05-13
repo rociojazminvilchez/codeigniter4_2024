@@ -120,7 +120,7 @@ class Noticias extends BaseController
         }
     }
 
- //EDITAR
+ //ESTADO -> EDITAR
     public function editar()
     {
         $noticiasModel = new NoticiasModel();
@@ -140,7 +140,6 @@ class Noticias extends BaseController
         $data['not'] = $noticiasModel->find($id);
         
         return view('estado/editar2', $data);
-        
     }
 
 

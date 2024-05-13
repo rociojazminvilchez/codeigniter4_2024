@@ -28,11 +28,7 @@ class Corregir extends BaseController
 
     public function create()
     {
-        //
-    }
-
-    public function edit($id = null)
-    {
+        
         $reglas = [
             'titulo'           => 'required|min_length[3]',
             'descripcion' => 'required',
@@ -43,8 +39,15 @@ class Corregir extends BaseController
         if (!$this->validate($reglas)) {
             return redirect()->back()->withInput()->with('error', $this->validator->listErrors());
         }
-     
-        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria','estado','usuario','correcion']);
+        #archivos
+        /*
+        $file = $this->request->getFile('image');
+        if($file->isValid() && ! $file->hasMoved()){
+            $imageName = $file->getRandomName();
+            $file->move('uploads/', $imageName);
+        }*/
+
+        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria','estado','usuario']);
 
         $corregirModel = new CorregirModel();
 
@@ -55,12 +58,17 @@ class Corregir extends BaseController
             'categoria'  => $post['categoria'],
             'estado'  => $post['estado'],
             'usuario'  => $post['usuario'],
-            'correcion' => $post['correcion'],
-            #'img' => $file,
+            
+            #'img' => $imageName,
             
         ]);
        
         return redirect()->to('noticias');
+    }
+
+    public function edit($id = null)
+    {
+        
     }
 
     public function update($id = null)

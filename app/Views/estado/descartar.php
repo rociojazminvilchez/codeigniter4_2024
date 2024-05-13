@@ -6,7 +6,7 @@
 <br><br><br>
 <form action="<?= base_url('editar/'. $edit['id']); ?>" method="post" enctype="multipart/form-data" style="margin-bottom:75px;">
 <input type="hidden" name="_method" value="put">
-<input type="hidden" name="estado" value="descartado">
+<input type="hidden" name="estado_modificado" value="descartado">
 <p style="text-align: center;">
 <button type="submit" name="actualizar" class="btn btn-sm btn-success" style="background-color: #3366cc;">ACTUALIZAR</button>
 </p>

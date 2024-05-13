@@ -53,7 +53,7 @@
 }
 ?> 
 
-<h3 class="my-3" id="titulo" style="margin: 20px;font-family: 'Times New Roman', serif;"> PANEL EDITAR </h3> 
+<h3 class="my-3" id="titulo" style="margin: 20px;font-family: 'Times New Roman', serif;"> PANEL EDITAR -  BORRADOR </h3> 
 
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
@@ -70,7 +70,7 @@
     <tbody>
     <?php if($_SESSION['rol']=='Editor'){
        foreach ($noticias as $not) : 
-          if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado']=='borrador' || $not['estado']=='corregir')) {
+          if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado']=='borrador')) {
         ?>
             <tr>
                 <td><?= $not['estado']; ?></td>
@@ -79,18 +79,9 @@
                 <td><?= $not['categoria']; ?></td>
                 <td><?= $not['img']; ?></td>
             
-                <td>
-                  <?php if($not['estado']=='borrador'){
-                    ?>                    
+                <td>                  
                     <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a>
-                  <?php
-                  }else{
-                  ?>
-                    <a href="<?php echo base_url('estado/' . $not['id']. '/corregir_editar'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a>
-                  <?php
-                  }
-                  ?>
-                  </td>
+                </td>
             </tr>
         <?php }
        endforeach; 

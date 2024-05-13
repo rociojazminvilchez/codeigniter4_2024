@@ -3,6 +3,7 @@
 <?php echo $this->section('contenido');?>
 
 <body>
+
 <?php if (session()->getFlashdata('error') !== null) { ?>
     <div class="alert alert-danger">
         <?= session()->getFlashdata('error'); ?>
@@ -14,15 +15,15 @@
     <form action="<?php echo base_url('corregir'); ?>" method="post" enctype="multipart/form-data" style="margin-bottom:75px;">
       <input type="hidden" name="id" value=" <?= $not['id']; ?>">
       <input type="hidden" name="usuario" value="<?= $not['usuario']; ?>">
-      <input type="hidden" name="editor" value="<?=   $_SESSION['usuario']?>">
+      
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad" >
         <div class="panel panel-success"><br>
-          <h2 class="panel-title"><center><font size="5"><i class='glyphicon glyphicon-user'></i>EDITAR</font></center></h2>
+          <h3 class="panel-title" style="text-align: center;";><i class='glyphicon glyphicon-user'></i>CORRECI&OacuteN</h3>
           <div class="panel-body">
             <div class="row">  
               <div class="col-md-3 col-lg-3 " style="text-align:center;"> 
 				        <div id="load_img">
-					        <img class="img-responsive" src=" <?= $not['id']; ?>" alt="Logo" width=100px height=100px>
+					        <img class="img-responsive" src=" <?= $not['id']; ?>" alt="img" width=100px height=100px>
                 </div><br>				
 					    <div class="row">
   						  <div class="col-md-12">
@@ -70,13 +71,13 @@
 </div>
            <!-- GUARDAR --> 
             <div class="panel-footer text-center">          
-                <button type="submit" name="editar" class="btn btn-sm btn-success" style="background-color: #3366cc;">GUARDAR CAMBIOS</button>
+                <button type="submit" name="corregir" class="btn btn-sm btn-success" style="background-color: #3366cc;">GUARDAR CAMBIOS</button>
               <br><br>
             </div>    
       </div>
     </div>
 	</form>
 </div>
-    </body>
+</body>
 
 <?php echo $this->endSection();?>
