@@ -14,7 +14,7 @@
       <a class="btn btn-primary" href="<?php echo base_url('noticias/mostrar')?>" role="button">HISTORIAL</a>
     </div>
     <div class="col">
-        <a class="btn btn-primary" href="<?php echo base_url('/estado/borrador')?>" role="button">BORRADOR</a>
+      <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
     </div>
     <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>

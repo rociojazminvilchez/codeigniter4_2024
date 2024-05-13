@@ -24,10 +24,7 @@ class Noticias extends BaseController
         return view('noticias/index',$data);
     }
 
-    //MOSTRAR -> NOTICIA DEL INDEX
-    
-   
-
+//MOSTRAR -> NOTICIA DEL INDEX
     public function new(){
         return view('noticias/nuevo');
     }
@@ -67,10 +64,43 @@ class Noticias extends BaseController
 
         return redirect()->to('noticias');
     }
-
+#ESTADO - PUBLICAR | DESCARTAR | CORRECION
     public function update($id = null){
-        //
+        if (!$this->request->is('put') || $id == null) {
+            return redirect()->route('noticias');
+        }
+
+        $post = $this->request->getPost(['estado_modificado','usuario_modificado']);
+
+        $noticiasModel = new NoticiasModel();
+        $noticiasModel->update($id, [
+            'estado_modificado'=> $post['estado_modificado'],
+            'usuario_modificado' => $post['usuario_modificado'],
+        ]);
+        return redirect()->route('noticias/mostrar');
     }
+
+#ESTADO - PUBLICAR
+    public function publicar($id=null){
+        $noticiasModel = new NoticiasModel();
+        $data['not']= $noticiasModel->find($id);
+        return view('estado/publicar', $data);
+    }
+
+#ESTADO - DESCARTAR
+    public function descartar($id=null){
+        $noticiasModel = new NoticiasModel();
+        $data['not']= $noticiasModel->find($id);
+        return view('estado/descartar_v', $data);
+    }
+
+#ESTADO - CORRECION
+    public function correcion($id=null){
+        $noticiasModel = new NoticiasModel();
+        $data['not']= $noticiasModel->find($id);
+        return view('estado/corregir_v', $data);
+    }
+
 
     public function mostrar()    {
         $noticiasModel = new NoticiasModel();

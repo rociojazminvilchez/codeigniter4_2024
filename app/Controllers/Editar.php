@@ -38,12 +38,13 @@ class Editar extends BaseController
         }
         
         #archivos
+        /*
         $file = $this->request->getFile('image');
         if($file->isValid() && ! $file->hasMoved()){
             $imageName = $file->getRandomName();
             $file->move('uploads/', $imageName);
        }
-        
+        */
         $post = $this->request->getPost(['id','titulo', 'descripcion','estado', 'categoria','img','usuario','editor']);
 
         $editarModel = new EditarModel();
@@ -56,7 +57,8 @@ class Editar extends BaseController
             'categoria' => $post['categoria'],
             'usuario'         => $post['usuario'],
             'editor' => $post['editor'],
-            'img' => $imageName,
+            'estado_modificado' => '',
+            #'img' => $imageName,
             
         ]);
         
@@ -107,12 +109,10 @@ class Editar extends BaseController
         if ($id == null) {
              return redirect()->route('noticias');
          }
- 
          $noticiasModel = new NoticiasModel();
          $data['not'] = $noticiasModel->find($id);
          
          return view('estado/corregir_editar', $data);
-         
      }
      
     public function corregir_editar($id=null){

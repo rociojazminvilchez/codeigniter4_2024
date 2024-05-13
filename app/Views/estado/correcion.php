@@ -17,10 +17,6 @@
     <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/borrador')?>" role="button">BORRADOR</a>
     </div>
-   
-    <div class="col">
-        <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>
-    </div>
   </div>
 </div>
 <?php

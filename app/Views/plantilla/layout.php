@@ -76,7 +76,7 @@
                <?php
               if($_SESSION['rol']=='Validador' ){
               ?>
-              <li><a class="dropdown-item" href="<?php echo base_url('estado/validar')?>">Panel</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('noticias/mostrar')?>">Panel</a></li>
               <li><a class="dropdown-item" href="<?php echo base_url('noticias/salir')?>">Cerrar sesi&oacuten</a></li>
             <?php
               }else{

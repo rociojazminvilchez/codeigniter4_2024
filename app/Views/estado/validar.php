@@ -60,9 +60,8 @@
         </tr>
     </thead>
  <?php foreach ($noticias as $not) : 
-    if($not['estado']=='validar'){
+    if($not['estado']=='validar' && $not['estado_modificado']==''){
     ?>
-    
             <tr>
                 <td><?= $not['titulo']; ?></td>
                 <td><?= $not['descripcion']; ?></td>
@@ -70,9 +69,9 @@
                 <td><?= $not['categoria']; ?></td>
                 <td><?= $not['img']; ?></td>
                 <td>
-                    <a href="<?php echo base_url(''); ?>" class="btn btn-warning btn-sm me-2">PUBLICAR</a><br><br>
-                    <a href="<?php echo base_url('corregir/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a> <br><br>
-                    <a href="<?php echo base_url(''); ?>" class="btn btn-warning btn-sm me-2">RECHAZAR</a> <br><br>
+                    <a href="<?php echo base_url('estado/' . $not['id'].'/publicar'); ?>" class="btn btn-warning btn-sm me-2">PUBLICAR</a><br><br>
+                    <a href="<?php echo base_url('estado/' . $not['id'].'/corregir_v'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a> <br><br>
+                    <a href="<?php echo base_url('estado/' . $not['id'].'/descartar_v'); ?>" class="btn btn-warning btn-sm me-2">RECHAZAR</a> <br><br>
                 </td>
             </tr>
         <?php }
