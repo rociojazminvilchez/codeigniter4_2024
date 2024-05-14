@@ -1,4 +1,8 @@
-<?php echo $this->extend('plantilla\layout');?>
+<?php
+
+use PharIo\Manifest\PhpElement;
+
+ echo $this->extend('plantilla\layout');?>
 
 <?php echo $this->section('contenido');?>
 
@@ -58,6 +62,7 @@
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
         <tr>
+            <th scope="col">id</th>
             <th scope="col">Estado</th>
             <th scope="col">Titulo</th>
             <th scope="col">Descripcion</th>
@@ -69,10 +74,12 @@
 
     <tbody>
     <?php if($_SESSION['rol']=='Editor'){
-       foreach ($noticias as $not) : 
-          if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado']=='borrador')) {
-        ?>
+      foreach ($noticias as $not) : 
+        
+            if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado']=='borrador')) {
+            ?>
             <tr>
+            <td><?= $not['id']; ?></td>
                 <td><?= $not['estado']; ?></td>
                 <td><?= $not['titulo']; ?></td>
                 <td><?= $not['descripcion']; ?></td>
@@ -83,12 +90,13 @@
                     <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a>
                 </td>
             </tr>
-        <?php }
+          <?php
+         }
        endforeach; 
       }
        ?>
     </tbody>
-</table>
+</table><br><br><br>
 
 <?= $this->endSection(); ?>
 
