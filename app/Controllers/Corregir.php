@@ -63,7 +63,7 @@ class Corregir extends BaseController
             
         ]);
        
-        return redirect()->to('noticias');
+        return redirect()->to('estado/correcion');
     }
 
     public function edit($id = null)

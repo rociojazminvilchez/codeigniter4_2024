@@ -159,9 +159,9 @@ class Noticias extends BaseController
  //ESTADO -> EDITAR
     public function editar()
     {
-        $db = \Config\Database::connect();
-        $noticiasModel = new NoticiasModel();
-        $builder = $db->table('noticias');
+      $db = \Config\Database::connect();
+      $noticiasModel = new NoticiasModel();
+      $builder = $db->table('noticias');
       $builder->select('noticias.*');
       $builder->join('editar', 'editar.id = noticias.id', 'left');
       $builder->where('editar.id IS NULL OR noticias.id IS NULL');

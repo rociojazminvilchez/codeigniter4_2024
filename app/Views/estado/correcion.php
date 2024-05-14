@@ -58,6 +58,7 @@
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
         <tr>
+        <th scope="col">ID</th>
             <th scope="col">Titulo</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Categoria</th>
@@ -72,6 +73,7 @@
           if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado_modificado']=='correcion')) {
         ?>
             <tr>
+            <td><?= $not['id']; ?></td>
                 <td><?= $not['titulo']; ?></td>
                 <td><?= $not['descripcion']; ?></td>
                 <td><?= $not['categoria']; ?></td>
@@ -86,6 +88,6 @@
       }
        ?>
     </tbody>
-</table>
+</table><br><br><br>
 
 <?= $this->endSection(); ?>

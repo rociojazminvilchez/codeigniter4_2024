@@ -96,12 +96,16 @@ class Editar extends BaseController
 
 //ESTADO -> CORREGIR - EDITAR
     public function correcion($id=null){
+        $db = \Config\Database::connect();
         $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
-
-        $data = ['noticias' => $resultado];
-
-        return view('estado/correcion', $data);
+        $builder = $db->table('noticias');
+        $builder->select('noticias.*');
+        $builder->join('correcion', 'correcion.id = noticias.id', 'left');
+        $builder->where('correcion.id IS NULL OR noticias.id IS NULL');
+        
+       $noticias['noticias'] = $builder->get()->getResultArray();
+       
+        return view('estado/correcion', $noticias);
     } 
 
     
@@ -114,7 +118,7 @@ class Editar extends BaseController
          
          return view('estado/corregir_editar', $data);
      }
-     
+    /*
     public function corregir_editar($id=null){
         $editarModel = new EditarModel();
         $data['edit'] = $editarModel->find($id);
@@ -122,7 +126,7 @@ class Editar extends BaseController
         exit;
         return view('estado/corregir_editar', $data);
     }
-
+*/
     public function delete($id = null)
     {
         //
