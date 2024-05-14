@@ -25,9 +25,9 @@
         <input type="text" name="titulo" required ><br><br>
         
       <span class="error">*</span> Descripci&oacute;n:<br>
-        <input type="text" name="descripcion"   required><br><br>
-
-        
+      <textarea name="descripcion" rows="5" cols="20" required>
+      </textarea><br><br>
+       
       <span class="error">*</span> 
         Estado: <br>
           <select id="estado" name="estado">

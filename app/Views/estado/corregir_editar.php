@@ -44,7 +44,10 @@
                     <td> Titulo:</td><td><input type="text" class="form-control input-sm" name="titulo" value="<?= $not['titulo']; ?>" required></td>
                   </tr>
                   <tr>
-                    <td> Descripcion:</td><td><input type="text" class="form-control input-sm" name="descripcion" value="<?= $not['descripcion']; ?>" required></td>
+                    <td>  Descripcion:</td>  
+                    <td> <textarea name="descripcion" rows="5" cols="20" required>
+                      <?= $not['descripcion']; ?>
+                    </textarea></td>
                   </tr>
                   <tr>
                     <td>Categoria:</td>

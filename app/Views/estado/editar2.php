@@ -22,7 +22,7 @@
             <div class="row">  
               <div class="col-md-3 col-lg-3 " style="text-align:center;"> 
 				        <div id="load_img">
-					        <img class="img-responsive" src=" <?= $not['id']; ?>" alt="img" width=100px height=100px>
+					        <img class="img-responsive" src=" <?= "public/uploads/".$not['id']; ?>" alt="img" width=100px height=100px>
                 </div><br>				
 					    <div class="row">
   						  <div class="col-md-12">
@@ -43,7 +43,10 @@
                     <td> Titulo:</td><td><input type="text" class="form-control input-sm" name="titulo" value="<?= $not['titulo']; ?>" required></td>
                   </tr>
                   <tr>
-                    <td> Descripcion:</td><td><input type="text" class="form-control input-sm" name="descripcion" value="<?= $not['descripcion']; ?>" required></td>
+                    <td>  Descripcion:</td>  
+                     <td> <textarea name="descripcion" rows="5" cols="20" required>
+                      <?= $not['descripcion']; ?>
+                    </textarea></td>
                   </tr>
                   <tr>
                     <td>Categoria:</td>

@@ -17,7 +17,7 @@
   
     <div class="col-auto d-none d-lg-block">
       <?php if($not['img']!=''){ ?>
-        <img src="<?= "uploads/".$not['img']; ?>" alt="Imagen" width="150" height="150">
+        <img src="<?= "../public/uploads/".$not['img']; ?>" alt="Imagen" width="150" height="150">
       <?php
         }
       ?>
