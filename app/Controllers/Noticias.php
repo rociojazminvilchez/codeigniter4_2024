@@ -36,7 +36,6 @@ class Noticias extends BaseController
             'descripcion' => 'required',
             'estado'         => 'required',
             'categoria'     => 'required',
-            
         ];
 
         if (!$this->validate($reglas)) {
@@ -44,7 +43,8 @@ class Noticias extends BaseController
         }
 
         #archivos
-       $file = $this->request->getFile('image');
+       $imageName="";
+      $file = $this->request->getFile('image');
        if($file->isValid() && ! $file->hasMoved()){
         $imageName = $file->getRandomName();
         $file->move('uploads/', $imageName);
@@ -53,14 +53,24 @@ class Noticias extends BaseController
         $post = $this->request->getPost(['titulo', 'descripcion', 'estado', 'categoria']);
     
         $noticiasModel = new NoticiasModel();
-
+        
+        if($imageName==''){
         $noticiasModel->insert([
             'titulo'            => trim($post['titulo']),
             'descripcion'           => trim($post['descripcion']),
             'estado' => $post['estado'],
-            'categoria'         => $post['categoria'],
-            'img' => $imageName,
+            'categoria'         => $post['categoria'],      
         ]);
+        }else{
+            $noticiasModel->insert([
+                'titulo'            => trim($post['titulo']),
+                'descripcion'           => trim($post['descripcion']),
+                'estado' => $post['estado'],
+                'categoria'         => $post['categoria'],
+                'img' => $imageName,        
+            ]);
+        }
+        
 
         return redirect()->to('noticias');
     }
