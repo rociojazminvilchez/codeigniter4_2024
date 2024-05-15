@@ -2,7 +2,6 @@
 
 <?php echo $this->section('contenido');?>
     <body>
-
     <?php
     if (session()->getFlashdata('error') !== null) { ?>
 
@@ -12,11 +11,11 @@
 <?php } ?>
 
     <form class="form" action="<?= base_url('noticias'); ?>" method="POST" enctype="multipart/form-data">
-    <p style="text-align:right;">
-      <a href="<?php echo base_url('noticias')?>">
-        <button type="button" class="btn-close" aria-label="Close"></button>
-      </a>
-    </p>
+      <p style="text-align:right;">
+        <a href="<?php echo base_url('noticias')?>">
+          <button type="button" class="btn-close" aria-label="Close"></button>
+        </a>
+      </p>
     
       <p style="text-align:left;"><span class="error"> (*) Campos obligatorios</span></p>
       <h4 style="text-align:left;"> Informaci&oacuten de la noticia:</h4><br>
@@ -50,10 +49,10 @@
           <input type="file" name="image" id="image" accept="image/jpeg,image/png"><br>
 
         <!-- Correo oculto-->
-          <input type="hidden" name="Email" value="<?php $correo ?>">
+          <input type="hidden" name="usuario" value="<?= $_SESSION['usuario'] ?>">
 
 
-        <input type="submit" name="oferta" value="CREAR NOTICIA">
+        <input type="submit" name="noticia" value="CREAR NOTICIA">
         </form>
        <?php
        

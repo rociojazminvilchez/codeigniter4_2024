@@ -50,7 +50,7 @@ class Noticias extends BaseController
         $file->move('uploads/', $imageName);
        }
         
-        $post = $this->request->getPost(['titulo', 'descripcion', 'estado', 'categoria']);
+        $post = $this->request->getPost(['titulo', 'descripcion', 'estado', 'categoria','usuario']);
     
         $noticiasModel = new NoticiasModel();
         
@@ -59,7 +59,8 @@ class Noticias extends BaseController
             'titulo'            => trim($post['titulo']),
             'descripcion'           => trim($post['descripcion']),
             'estado' => $post['estado'],
-            'categoria'         => $post['categoria'],      
+            'categoria'         => $post['categoria'], 
+            'usuario'         => $post['usuario'],
         ]);
         }else{
             $noticiasModel->insert([
@@ -67,6 +68,7 @@ class Noticias extends BaseController
                 'descripcion'           => trim($post['descripcion']),
                 'estado' => $post['estado'],
                 'categoria'         => $post['categoria'],
+                'usuario'         => $post['usuario'],
                 'img' => $imageName,        
             ]);
         }
