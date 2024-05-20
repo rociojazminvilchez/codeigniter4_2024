@@ -33,14 +33,19 @@
  ?>             
   <!-- PERFIL EDITOR | VALIDADOR  -->   
   <div class="container text-center">
-  <div class="row">
-    
-    <div class="col">
-        <a class="btn btn-primary" href="<?php echo base_url('/estado/corregir')?>" role="button">CORRECI&OacuteN</a>
-    </div>
+  <div class="row">    
     <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/noticias/mostrar')?>" role="button">HISTORIAL</a>
     </div>
+    <div class="col">
+      <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
+    </div>
+
+    <div class="col">
+        <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>
+    </div>
+
+
   </div>
 </div>
 <?php 
@@ -51,6 +56,7 @@
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
         <tr>
+            <th scope="col">ID</th>
             <th scope="col">Titulo</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Categoria</th>
@@ -63,11 +69,16 @@
     if($not['estado']=='validar' && $not['estado_modificado']==''){
     ?>
             <tr>
-                <td><?= $not['titulo']; ?></td>
+               <td><?= $not['id']; ?></td>
+                <td><?= ucfirst($not['titulo']); ?></td>
                 <td><?= $not['descripcion']; ?></td>
                 
-                <td><?= $not['categoria']; ?></td>
-                <td><?= $not['img']; ?></td>
+                <td><?= ucfirst($not['categoria']); ?></td>
+                <td>
+                <?php if($not['img']!=''){ ?>
+                        <img src="<?= "uploads/".$not['img']; ?>" class="card-img-top" alt="Imagen"><br><br>
+                    <?php } ?>
+                </td>
                 <td>
                     <a href="<?php echo base_url('estado/' . $not['id'].'/publicar'); ?>" class="btn btn-warning btn-sm me-2">PUBLICAR</a><br><br>
                     <a href="<?php echo base_url('estado/' . $not['id'].'/corregir_v'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a> <br><br>
@@ -76,9 +87,47 @@
                 </td>
             </tr>
         <?php }
-    endforeach; ?>
-    
-    </tbody>
+    endforeach; ?> 
+    <?php foreach ($editar as $not) : 
+    if($not['estado']=='validar' && $not['estado_modificado']==''){
+    ?>
+            <tr>
+               <td><?= $not['id']; ?></td>
+                <td><?= $not['titulo']; ?></td>
+                <td><?= $not['descripcion']; ?></td>
+                
+                <td><?= ucfirst($not['categoria']); ?></td>
+                <td><?= $not['img']; ?></td>
+                <td>
+                    <a href="<?php echo base_url('validarEDITAR/' . $not['id'].'/publicar'); ?>" class="btn btn-warning btn-sm me-2">PUBLICAR</a><br><br>
+                    <a href="<?php echo base_url('validarEDITAR/' . $not['id'].'/corregir_v'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a> <br><br>
+                    <a href="<?php echo base_url('validarEDITAR/' . $not['id'].'/descartar_v'); ?>" class="btn btn-warning btn-sm me-2">RECHAZAR</a> <br><br>
+                    <a href="<?php echo base_url('validarEDITAR/' . $not['id'].'/deshacer_v'); ?>" class="btn btn-warning btn-sm me-2">DESHACER</a> <br><br>
+                </td>
+            </tr>
+        <?php }
+    endforeach; ?> 
+
+<?php foreach ($editar2 as $not) : 
+    if($not['estado']=='validar' && $not['estado_modificado']==''){
+    ?>
+            <tr>
+               <td><?= $not['id']; ?></td>
+                <td><?= $not['titulo']; ?></td>
+                <td><?= $not['descripcion']; ?></td>
+                
+                <td><?= ucfirst($not['categoria']); ?></td>
+                <td><?= $not['img']; ?></td>
+                <td>
+                    <a href="<?php echo base_url('validarEDITAR2/' . $not['id'].'/publicar'); ?>" class="btn btn-warning btn-sm me-2">PUBLICAR</a><br><br>
+                    <a href="<?php echo base_url('validarEDITAR2/' . $not['id'].'/corregir_v'); ?>" class="btn btn-warning btn-sm me-2">CORREGIR</a> <br><br>
+                    <a href="<?php echo base_url('validarEDITAR2/' . $not['id'].'/descartar_v'); ?>" class="btn btn-warning btn-sm me-2">RECHAZAR</a> <br><br>
+                    <a href="<?php echo base_url('validarEDITAR2/' . $not['id'].'/deshacer_v'); ?>" class="btn btn-warning btn-sm me-2">DESHACER</a> <br><br>
+                </td>
+            </tr>
+        <?php }
+    endforeach; ?> 
+  </tbody>
 </table><br><br><br>
 
 <?= $this->endSection(); ?>

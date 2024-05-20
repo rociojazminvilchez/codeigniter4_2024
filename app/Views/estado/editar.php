@@ -18,9 +18,6 @@ use PharIo\Manifest\PhpElement;
       <a class="btn btn-primary" href="<?php echo base_url('noticias/mostrar')?>" role="button">HISTORIAL</a>
     </div>
     <div class="col">
-        <a class="btn btn-primary" href="<?php echo base_url('/estado/borrador')?>" role="button">BORRADOR</a>
-    </div>
-    <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>
     </div>
   </div>
@@ -43,8 +40,8 @@ use PharIo\Manifest\PhpElement;
   <div class="container text-center">
   <div class="row">
     <div class="col">
-      <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
-    </div>
+      <a class="btn btn-primary" href="<?php echo base_url('noticias/mostrar')?>" role="button">HISTORIAL</a>
+    </div> 
     <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>
     </div>
@@ -73,29 +70,127 @@ use PharIo\Manifest\PhpElement;
     </thead>
 
     <tbody>
-    <?php if($_SESSION['rol']=='Editor'){
-      foreach ($noticias as $not) : 
-        
-            if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado']=='borrador')) {
+    <?php if($_SESSION['rol']=='Editor' || $_SESSION['rol']=='Editor|Validador'){
+      foreach ($noticias as $not) :  
+            if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado']=='borrador' && ($not['estado_borrador']!='descartado'))) {
             ?>
             <tr>
             <td><?= $not['id']; ?></td>
                 <td><?= $not['estado']; ?></td>
                 <td><?= $not['titulo']; ?></td>
                 <td><?= $not['descripcion']; ?></td>
-                <td><?= $not['categoria']; ?></td>
+                <td><?= ucfirst($not['categoria']); ?></td>
                 <td><?= $not['img']; ?></td>
             
                 <td>                  
-                    <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a>
+                    <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a><br><br> 
+                    <a href="<?php echo base_url('estado/' . $not['id'].'/descartarNoticia'); ?>" class="btn btn-warning btn-sm me-2">DESCARTAR </a> 
                 </td>
             </tr>
           <?php
          }
        endforeach; 
+       foreach ($editar as $not) :  
+        if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado']=='borrador') && ($not['estado_modificado']!='descartado')) {
+        ?>
+        <tr>
+        <td><?= $not['id']; ?></td>
+            <td><?= $not['estado']; ?></td>
+            <td><?= $not['titulo']; ?></td>
+            <td><?= $not['descripcion']; ?></td>
+            <td><?= ucfirst($not['categoria']); ?></td>
+            <td><?= $not['img']; ?></td>
+        
+            <td> 
+              <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a><br><br>                  
+              <a href="<?php echo base_url('estado/' . $not['id'].'/descartar'); ?>" class="btn btn-warning btn-sm me-2">DESCARTAR </a> 
+            </td>
+        </tr>
+      <?php
+     }
+   endforeach; 
+   foreach ($editar2 as $not)  :  
+    if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado']=='borrador') && ($not['estado_borrador']!='descartado')) {
+    ?>
+    <tr>
+    <td><?= $not['id']; ?></td>
+        <td><?= $not['estado']; ?></td>
+        <td><?= $not['titulo']; ?></td>
+        <td><?= $not['descripcion']; ?></td>
+        <td><?= ucfirst($not['categoria']); ?></td>
+        <td><?= $not['img']; ?></td>
+    
+        <td>                  
+            <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a><br><br> 
+            <a href="<?php echo base_url('estado/' . $not['id'].'/descartarEdit2'); ?>" class="btn btn-warning btn-sm me-2">DESCARTAR </a> 
+        </td>
+    </tr>
+  <?php
+ }
+endforeach; 
+  
+      }else{
+        foreach ($noticias as $not) :  
+          if( $not['estado']=='borrador' && ($not['estado_borrador']!='descartado')){
+          ?>
+          <tr>
+          <td><?= $not['id']; ?></td>
+              <td><?= $not['estado']; ?></td>
+              <td><?= $not['titulo']; ?></td>
+              <td><?= $not['descripcion']; ?></td>
+              <td><?= ucfirst($not['categoria']); ?></td>
+              <td><?= $not['img']; ?></td>
+          
+              <td>                  
+                  <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a><br><br> 
+                  <a href="<?php echo base_url('estado/' . $not['id'].'/descartarNoticia'); ?>" class="btn btn-warning btn-sm me-2">DESCARTAR </a> 
+              </td>
+          </tr>
+        <?php
+       }
+     endforeach; 
+     foreach ($editar as $not) :  
+      if(  ($not['estado']=='borrador') && ($not['estado_modificado']!='descartado')) {
+      ?>
+      <tr>
+      <td><?= $not['id']; ?></td>
+          <td><?= $not['estado']; ?></td>
+          <td><?= $not['titulo']; ?></td>
+          <td><?= $not['descripcion']; ?></td>
+          <td><?= ucfirst($not['categoria']); ?></td>
+          <td><?= $not['img']; ?></td>
+      
+          <td> 
+            <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a><br><br>                  
+            <a href="<?php echo base_url('estado/' . $not['id'].'/descartar'); ?>" class="btn btn-warning btn-sm me-2">DESCARTAR </a> 
+          </td>
+      </tr>
+    <?php
+   }
+ endforeach; 
+ foreach ($editar2 as $not)  :  
+  if(($not['estado']=='borrador') && ($not['estado_borrador']!='descartado')) {
+  ?>
+  <tr>
+  <td><?= $not['id']; ?></td>
+      <td><?= $not['estado']; ?></td>
+      <td><?= $not['titulo']; ?></td>
+      <td><?= $not['descripcion']; ?></td>
+      <td><?= ucfirst($not['categoria']); ?></td>
+      <td><?= $not['img']; ?></td>
+  
+      <td>                  
+          <a href="<?php echo base_url('noticias/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2">EDITAR</a><br><br> 
+          <a href="<?php echo base_url('estado/' . $not['id'].'/descartarEdit2'); ?>" class="btn btn-warning btn-sm me-2">DESCARTAR </a> 
+      </td>
+  </tr>
+<?php
+}
+endforeach; 
       }
        ?>
     </tbody>
+
 </table><br><br><br>
 
 <?= $this->endSection(); ?>

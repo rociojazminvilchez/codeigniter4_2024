@@ -97,6 +97,6 @@
         </div>
 		</form>
 </div>
-    </body>
+</body>
 
 <?php echo $this->endSection();?>

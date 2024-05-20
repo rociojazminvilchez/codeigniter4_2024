@@ -1,0 +1,14 @@
+html {
+    min-height: 100%;
+    position: relative;    
+}
+
+
+
+.navbar {
+    position: relative; /* Evita que se superponga a otros elementos */
+}
+
+.card {
+    position: relative; /* Asegura que el contenido no se superponga al navbar */
+}

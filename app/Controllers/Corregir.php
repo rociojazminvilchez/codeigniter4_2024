@@ -9,25 +9,13 @@ use App\Models\CorregirModel;
 class Corregir extends BaseController
 {
 
-    public function index()
-    {
-        //
-    }
-
-    public function show($id = null)
-    {
+    public function show($id = null){
         $noticiasModel = new NoticiasModel();
         $data['not'] = $noticiasModel->find($id);
         return view('mostrar/corregida', $data);
     }
 
-    public function new()
-    {
-        //
-    }
-
-    public function create()
-    {
+    public function create() {
         
         $reglas = [
             'titulo'           => 'required|min_length[3]',
@@ -47,7 +35,7 @@ class Corregir extends BaseController
             $file->move('uploads/', $imageName);
         }*/
 
-        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria','estado','usuario']);
+        $post = $this->request->getPost(['id','titulo', 'descripcion', 'categoria','estado','usuario','usuario_modificado']);
 
         $corregirModel = new CorregirModel();
 
@@ -55,10 +43,10 @@ class Corregir extends BaseController
             'id' => $post['id'],
             'titulo'     => trim($post['titulo']),
             'descripcion' => trim($post['descripcion']),
-            'categoria'  => $post['categoria'],
             'estado'  => $post['estado'],
+            'categoria' => $post['categoria'],
             'usuario'  => $post['usuario'],
-            
+            'usuario_modificado' => $post['usuario_modificado'],
             #'img' => $imageName,
             
         ]);
@@ -66,18 +54,22 @@ class Corregir extends BaseController
         return redirect()->to('estado/correcion');
     }
 
-    public function edit($id = null)
-    {
+    public function index() {
+
+    }
+
+    public function new(){
         
     }
 
-    public function update($id = null)
-    {
-        //
+    public function edit($id = null){
+        
     }
 
-    public function delete($id = null)
-    {
-        //
+    public function update($id = null)    {
+    }
+
+    public function delete($id = null) {
+    
     }
 }

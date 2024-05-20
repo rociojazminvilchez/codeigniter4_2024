@@ -12,20 +12,13 @@
         </a>
       </p>
     <h4 style="text-align:left;">Recuperar contrase&ntildea: </h4><br>
-    <p> 
-    Vamos a enviarte un e-mail para que puedas cambiar tu contrase&ntildea.
-    </p><br>
-
+    <p> Vamos a enviarte un e-mail para que puedas cambiar tu contrase&ntildea.</p><br>
     E-mail:<br>
     <input type="email" name="Email"><br>
     <span class="error"></span>
     
     <input type="submit" name ="enviar" value="ENVIAR">
 </form>
-<?php
-   # include("basedatos\BDrecuperarInicio.php");
-?>
-
 </body>
 
 <?php echo $this->endSection();?>

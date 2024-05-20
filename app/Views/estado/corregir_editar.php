@@ -14,6 +14,7 @@
   <div class="row">
     <form action="<?php echo base_url('corregir'); ?>" method="post" enctype="multipart/form-data" style="margin-bottom:75px;">
       <input type="hidden" name="id" value=" <?= $not['id']; ?>">
+      <input type="hidden" name="usuario_modificado" value="<?= $not['usuario_modificado']; ?>">
       <input type="hidden" name="usuario" value="<?= $not['usuario']; ?>">
       
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad" >
@@ -50,9 +51,9 @@
                     </textarea></td>
                   </tr>
                   <tr>
-                    <td>Categoria:</td>
+                  <td>Categoria:</td>
                       <td><select id="categoria" name="categoria">
-                        <option value="seleccione"><?= ($not['categoria']); ?></option>
+                        <option value="<?= ($not['categoria']); ?>"><?= ($not['categoria']); ?></option>
                         <option value="economia">Economia</option>
                         <option value="politica">Politica</option>
                         <option value="turismo">Turismo</option>
@@ -62,7 +63,6 @@
                   <tr>
                     <td>Estado:</td>
                     <td><select id="estado" name="estado" >
-                      <option value="seleccione">Seleccione</option>
                       <option value="borrador">Borrador</option>
                       <option value="validar">Lista para validar</option>
                     </select></td>

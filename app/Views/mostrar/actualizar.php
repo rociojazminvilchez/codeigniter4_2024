@@ -11,7 +11,9 @@
     <div class="col">
       <a class="btn btn-primary" href="<?php echo base_url('/noticias/mostrar')?>" role="button">ACTUALIZAR</a>
     </div>
+
     <div class="col">
+      
     </div>
   </div>
 </div>

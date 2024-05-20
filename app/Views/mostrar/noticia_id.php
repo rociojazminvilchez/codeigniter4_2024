@@ -35,18 +35,16 @@ function modificar_fecha ($fecha_inicial){
   ?>
   </div>
   <div class="card-header" style = "text-align:left; font-weight: bold;">
-    <?php echo $not['categoria'];  ?>
+    <?php echo ucfirst($not['categoria']);  ?>
   </div>
 
-
-
   <div class="card-body">
-    <h5 class="card-title"> <?php echo $not['titulo']; ?> </h5>
+    <h5 class="card-title"> <?php echo ucfirst($not['titulo']); ?> </h5>
     <div class="col-auto d-none d-lg-block" style = "text-align:center;">
     <img src="<?= "uploads/".$not['img']; ?>" alt="Imagen" width="250" height="250">
     </div><br>
 
-    <p class="card-text"> <?php echo $not['descripcion']; ?> </p>
+    <p class="card-text"> <?php echo ucfirst($not['descripcion']); ?> </p>
   </div>
   <div class="card-footer text-muted">
   <?php 
@@ -55,7 +53,12 @@ function modificar_fecha ($fecha_inicial){
   $fecha_final= date("Y/m/d");
 
 $dias = dias_pasados($fecha_inicial,$fecha_final);
-echo "Publicado hace ".$dias. " dias";
+if($dias!=0){
+  echo "Publicado hace ".$dias. " dias";
+}else{
+  echo("Recientemente publicado");
+}
+
   ?>
   </div>
 </div>   
@@ -65,8 +68,6 @@ echo "Publicado hace ".$dias. " dias";
     </div>
   </div>
 </div><br>
-
-    
 <br><br><br><br>
 </body>    
 <?php echo $this->endSection();?>

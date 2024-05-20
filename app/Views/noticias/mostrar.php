@@ -13,9 +13,6 @@
       <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
     </div>
     <div class="col">
-      <a class="btn btn-primary" href="<?php echo base_url('/estado/borrador')?>" role="button">BORRADOR</a>
-    </div>
-    <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>
     </div>
   </div>
@@ -58,39 +55,51 @@
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
         <tr>
+            <th scope="col">ID</th>
             <th scope="col">Titulo</th>
             <th scope="col">Descripcion</th>
-            <th scope="col">Estado</th>
             <th scope="col">Categoria</th>
-            <th scope="col">Imagen</th>
             <th scope="col">Usuario</th>
             <th scope="col"></th>
         </tr>
     </thead>
 
     <tbody>
-
         <?php foreach ($noticias as $not) : ?>
-
+            <?php
+              if(($_SESSION['rol'] =='Editor')){
+                if(($_SESSION['usuario'] ==$not['usuario'])){
+            ?>
             <tr>
-                <td><?= $not['titulo']; ?></td>
-                <td><?= $not['descripcion']; ?></td>
-                <td><?= $not['estado']; ?></td>
-                <td><?= $not['categoria']; ?></td>
-                <td>
-                  <?php if($not['img']!=''){
-                  ?>
-                   <img src="<?="uploads/".$not['img']; ?>" alt="Imagen" width="100" height="100">
-                  <?php
-                  }
-                 ?>
-                </td>
-                <td><?= $not['usuario']; ?></td>
-                <td>
-                    <a href="<?php echo base_url('mostrar/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>
-                </td>
+              <td><?= $not['id']; ?></td>
+              <td><?= $not['titulo']; ?></td>
+              <td><?= $not['descripcion']; ?></td>
+              <td><?= ucfirst($not['categoria']); ?></td>
+              <td><?= $not['usuario']; ?></td>
+              <td>
+                <a href="<?php echo base_url('mostrar/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>
+              </td>
             </tr>
-        <?php endforeach; ?>
+        <?php }
+              }
+        else {
+          ?>
+          <tr>
+          <td><?= $not['id']; ?></td>
+          <td><?= $not['titulo']; ?></td>
+          <td><?= $not['descripcion']; ?></td>
+          <td><?= ucfirst($not['categoria']); ?></td>
+          <td><?= $not['usuario']; ?></td>
+          <td>
+            <a href="<?php echo base_url('mostrar/' . $not['id']. '/historial'); ?>" class="btn btn-warning btn-sm me-2">HISTORIAL</a>
+          </td>
+        </tr>
+        <?php
+        }
+              
+            endforeach; 
+        
+      ?>
 
     </tbody>
 </table><br><br><br><br>

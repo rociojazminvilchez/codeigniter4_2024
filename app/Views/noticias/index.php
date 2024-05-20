@@ -5,41 +5,56 @@
 <body>
 
 <br>
-   
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <?php foreach ($noticias as $not) : 
+            if($not['estado_modificado']=='publicar' && $not['estadoEvento']=='Activo'){       
+        ?>
     
-<?php foreach ($noticias as $not) : 
- 
-  if($not['estado']=='borrador'){
-?>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                <strong class="d-inline-block mb-2 text-primary-emphasis"><?= ucfirst($not['categoria']); ?></strong>
+                    <h5 class="card-title" style="text-align: center;"><?= $not['titulo']; ?></h5>
+                    <?php if($not['img']!=''){ ?>
+                        <img src="<?= "uploads/".$not['img']; ?>" class="card-img-top" alt="Imagen"><br><br>
+                    <?php } ?>
+                    <p style="text-align: center;">
+                    <a href="<?php echo base_url('mostrar/' . $not['id']. '/noticia_id'); ?>" class="btn btn-primary">Ver más información</a>
+                    </p>
+                  </div>
+            </div>
+        </div>
+                    </td>
+        <?php }
+        endforeach; ?>
 
-<div style = "text-align:center;">
-<div class="col-md-4">
-  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-    <div class="col p-2 d-flex flex-column position-static">
-      <strong class="d-inline-block mb-2 text-primary-emphasis"><?= $not['categoria']; ?></strong>
-      <h3 class="mb-0"><?= $not['titulo']; ?></h3><br>
-  
-    <div class="col-auto d-none d-lg-block" style = "text-align:center;">
-      <?php if($not['img']!=''){ ?>
-        <img src="<?= "uploads/".$not['img']; ?>" alt="Imagen" width="150" height="150">
-      <?php
-        }
-      ?>
-    </div><br>
- 
-    <div class="col">
-      <a class="btn btn-primary" href="<?php echo base_url('mostrar/' . $not['id']. '/noticia_id'); ?>" role="button">Ver m&aacutes informaci&oacuten</a>
-     </div>
-
+         <?php foreach ($editar as $not) : 
+            if($not['estado_modificado']=='publicar' && $not['estadoEvento']=='Activo'){       
+        ?>
+    
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                <strong class="d-inline-block mb-2 text-primary-emphasis"><?= ucfirst($not['categoria']); ?></strong>
+                    <h5 class="card-title" style="text-align: center;"><?= $not['titulo']; ?></h5>
+                    <?php if($not['img']!=''){ ?>
+                        <img src="<?= "uploads/".$not['img']; ?>" class="card-img-top" alt="Imagen"><br><br>
+                    <?php } ?>
+                    <p style="text-align: center;">
+                    <a href="<?php echo base_url('mostrar/' . $not['id']. '/noticia_id'); ?>" class="btn btn-primary">Ver más información</a>
+                    </p>
+                  </div>
+            </div>
+        </div>
+                    </td>
+        <?php }
+        endforeach; ?>
+        
     </div>
-  </div>
 </div>
-</div>
+<br><br><br><br>
 
-<?php }
-endforeach; ?>
-
-<br><br><br>
 </body>
 
 <?php echo $this->endSection();?>

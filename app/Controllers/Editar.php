@@ -4,29 +4,21 @@ namespace App\Controllers;
 
 use App\Models\NoticiasModel;
 
-use App\Models\IngresoModel;
-
 use App\Models\EditarModel;
-
-class Editar extends BaseController
-{
-    public function index() {
-        //
-    }
-
-
+use App\Models\EditarModel2;
+class Editar extends BaseController{
     public function show($id = null) {
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
         $noticiasModel = new NoticiasModel();
         $data['not'] = $noticiasModel->find($id);
         return view('mostrar/panel_editada', $data);
     }
 
-    public function new() {
-        //
-    }
-
 #ESTADO -> EDITAR NOTICIA
     public function create(){
+       
         $reglas = [
             'titulo'           => 'required|min_length[3]',
             'descripcion' => 'required',
@@ -46,9 +38,12 @@ class Editar extends BaseController
        }
         */
         $post = $this->request->getPost(['id','titulo', 'descripcion','estado', 'categoria','img','usuario','editor']);
-
+  
+         $id=$post['id'];
         $editarModel = new EditarModel();
-   
+        $editarModel2 = new EditarModel2();
+        $data = $editarModel->consultarID(['id'=> $id]);
+    if(count($data) == 0){
         $editarModel->insert([
             'id' => $post['id'],
             'titulo'            => trim($post['titulo']),
@@ -61,12 +56,27 @@ class Editar extends BaseController
             #'img' => $imageName,
             
         ]);
-        
+        return view('mostrar/actualizar');
+    }else{
+        $editarModel2->insert([
+            'id' => $post['id'],
+            'titulo'            => trim($post['titulo']),
+            'descripcion'           => trim($post['descripcion']),
+            'estado'         => $post['estado'],
+            'categoria' => $post['categoria'],
+            'usuario'         => $post['usuario'],
+            'editor' => $post['editor'],
+            'estado_modificado' => '',
+            #'img' => $imageName,
+            
+        ]);
         return view('mostrar/actualizar');
     }
+}
 
 #ESTADO -> BORRADOR - DESCARTAR     
     public function borrador($id=null){
+       
         $editarModel = new EditarModel();
         $resultado = $editarModel->find($id);
         $data = ['editar' => $resultado];
@@ -85,51 +95,112 @@ class Editar extends BaseController
         $editarModel->update($id, [
             'estado_modificado'=> $post['estado_modificado'],
         ]);
-        return redirect()->route('noticias');
+        return redirect()->route('noticias/mostrar');
     }
 
     public function descartar($id=null){
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
         $editarModel = new EditarModel();
         $data['edit']= $editarModel->find($id);
         return view('estado/descartar', $data);
     }
 
 //ESTADO -> CORREGIR - EDITAR
-    public function correcion($id=null){
-        $db = \Config\Database::connect();
+    public function correcion($id=null)
+    {
         $noticiasModel = new NoticiasModel();
-        $builder = $db->table('noticias');
-        $builder->select('noticias.*');
-        $builder->join('correcion', 'correcion.id = noticias.id', 'left');
-        $builder->where('correcion.id IS NULL OR noticias.id IS NULL');
-        
-       $noticias['noticias'] = $builder->get()->getResultArray();
-       
+        $noticias['noticias'] = $noticiasModel->mostrarCorreccion();     
+
+        $editarModel = new EditarModel();
+        $noticias['editar'] = $editarModel->mostrarCorreccion(); 
+      
+        $editarModel2 = new EditarModel2();
+        $noticias['editar2'] = $editarModel2->mostrarCorreccion();
+
         return view('estado/correcion', $noticias);
     } 
-
     
     public function edit($id = null ){
         if ($id == null) {
-             return redirect()->route('noticias');
-         }
-         $noticiasModel = new NoticiasModel();
-         $data['not'] = $noticiasModel->find($id);
-         
-         return view('estado/corregir_editar', $data);
-     }
-    /*
-    public function corregir_editar($id=null){
-        $editarModel = new EditarModel();
-        $data['edit'] = $editarModel->find($id);
-        print_r($data);
-        exit;
+            return redirect()->route('noticias');
+        }
+        $noticiasModel = new NoticiasModel();
+        $data['not'] = $noticiasModel->find($id); 
         return view('estado/corregir_editar', $data);
     }
-*/
-    public function delete($id = null)
-    {
-        //
+
+#ESTADO VALIDAR - PUBLICAR | DESCARTAR | CORRECION
+    public function update2($id = null){
+        if (!$this->request->is('put') || $id == null) {
+            return redirect()->route('noticias');
+        }
+
+        $post = $this->request->getPost(['estado_modificado','usuario_modificado','estatus','estadoEvento']);
+        
+        $editarModel = new EditarModel();
+        $editarModel->update($id, [
+            'estado_modificado'=> $post['estado_modificado'],
+            'usuario_modificado' => $post['usuario_modificado'],
+            'estatus'=>$post['estatus'],
+            'estadoEvento' => $post['estadoEvento'],
+        ]);
+        return redirect()->route('noticias/mostrar');
     }
 
+#ESTADO - PUBLICAR
+    public function publicar2($id=null){
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
+        $editarModel = new EditarModel();
+        $data['not']= $editarModel->find($id);
+        return view('estado/validarEDITAR/publicar', $data);
+    }
+
+#ESTADO - DESCARTAR
+    public function descartar2($id=null){
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
+        $editarModel = new EditarModel();
+        $data['not']= $editarModel->find($id);
+        return view('estado/validarEDITAR/descartar_v', $data);
+    }
+
+#ESTADO - CORRECION
+    public function correcion2($id=null){
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
+        $editarModel = new EditarModel();
+        $data['not']= $editarModel->find($id);
+        return view('estado/validarEDITAR/corregir_v', $data);
+    }
+
+#ESTADO - DESHACER
+    public function deshacer2
+    ($id=null){
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
+        $editarModel = new EditarModel();
+        $data['not']= $editarModel->find($id);
+        return view('estado/validarEDITAR/deshacer_v', $data);
+    }
+#EVENTO
+    public function activar($idEvento) {
+        $editarModel = new EditarModel();
+       $editarModel->activarEvento($idEvento); 
+    }
+
+    public function new() {
+    }
+
+    public function index() {    
+    }
+    
+    public function delete($id = null){
+    }
 }

@@ -3,26 +3,26 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\Consultas;
+
 use App\Models\NoticiasModel;
 
 use App\Models\IngresoModel;
 
 use App\Models\EditarModel;
-
-use App\Models\HistorialModel;
-use App\Models\ConsultasModel;
-
+use App\Models\EditarModel2;
+use App\Models\CorregirModel;
 class Noticias extends BaseController
 {
+   protected $helpers = ['form'];
 
     public function index() {
         $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
+        $noticias['noticias'] = $noticiasModel->mostrarIndex();
 
-        $data = ['noticias' => $resultado];
-
-        return view('noticias/index',$data);
+        $editarModel = new EditarModel();
+        $noticias['editar']= $editarModel->mostrarIndex();
+        
+        return view('noticias/index',$noticias);
     }
 
 //MOSTRAR -> NOTICIA DEL INDEX
@@ -32,19 +32,25 @@ class Noticias extends BaseController
 
     public function create(){
         $reglas = [
-            'titulo'           => 'required|min_length[3]',
+            'titulo'=> [
+                'label' => 'titulo',
+                'rules' => 'required|min_length[5]',
+                'errors' => [
+                    'required' => 'El titulo es obligatorio y debe tener mas de 5 caracteres'
+                ],
+            ],
             'descripcion' => 'required',
             'estado'         => 'required',
             'categoria'     => 'required',
         ];
 
         if (!$this->validate($reglas)) {
-            return redirect()->back()->withInput()->with('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
         }
 
-        #archivos
+    #ARCHIVOS
        $imageName="";
-      $file = $this->request->getFile('image');
+       $file = $this->request->getFile('image');
        if($file->isValid() && ! $file->hasMoved()){
         $imageName = $file->getRandomName();
         $file->move('uploads/', $imageName);
@@ -53,14 +59,14 @@ class Noticias extends BaseController
         $post = $this->request->getPost(['titulo', 'descripcion', 'estado', 'categoria','usuario']);
     
         $noticiasModel = new NoticiasModel();
-        
+
         if($imageName==''){
         $noticiasModel->insert([
             'titulo'            => trim($post['titulo']),
             'descripcion'           => trim($post['descripcion']),
             'estado' => $post['estado'],
             'categoria'         => $post['categoria'], 
-            'usuario'         => $post['usuario'],
+            'usuario'         => $post['usuario'], 
         ]);
         }else{
             $noticiasModel->insert([
@@ -69,31 +75,36 @@ class Noticias extends BaseController
                 'estado' => $post['estado'],
                 'categoria'         => $post['categoria'],
                 'usuario'         => $post['usuario'],
-                'img' => $imageName,        
+                'img' => $imageName,  
             ]);
         }
         
 
         return redirect()->to('noticias');
     }
-#ESTADO - PUBLICAR | DESCARTAR | CORRECION
+
+#ESTADO VALIDAR - PUBLICAR | DESCARTAR | CORRECION
     public function update($id = null){
         if (!$this->request->is('put') || $id == null) {
             return redirect()->route('noticias');
         }
 
-        $post = $this->request->getPost(['estado_modificado','usuario_modificado']);
+        $post = $this->request->getPost(['estado_modificado','usuario_modificado','estadoEvento']);
 
         $noticiasModel = new NoticiasModel();
         $noticiasModel->update($id, [
             'estado_modificado'=> $post['estado_modificado'],
             'usuario_modificado' => $post['usuario_modificado'],
+            'estadoEvento' => $post['estadoEvento'],
         ]);
         return redirect()->route('noticias/mostrar');
     }
 
 #ESTADO - PUBLICAR
     public function publicar($id=null){
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
         $noticiasModel = new NoticiasModel();
         $data['not']= $noticiasModel->find($id);
         return view('estado/publicar', $data);
@@ -101,6 +112,9 @@ class Noticias extends BaseController
 
 #ESTADO - DESCARTAR
     public function descartar($id=null){
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
         $noticiasModel = new NoticiasModel();
         $data['not']= $noticiasModel->find($id);
         return view('estado/descartar_v', $data);
@@ -108,6 +122,9 @@ class Noticias extends BaseController
 
 #ESTADO - CORRECION
     public function correcion($id=null){
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
         $noticiasModel = new NoticiasModel();
         $data['not']= $noticiasModel->find($id);
         return view('estado/corregir_v', $data);
@@ -115,12 +132,40 @@ class Noticias extends BaseController
 
 #ESTADO - DESHACER
     public function deshacer($id=null){
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
         $noticiasModel = new NoticiasModel();
         $data['not']= $noticiasModel->find($id);
         return view('estado/deshacer_v', $data);
     }
+#EDITOR - DESCARTAR BORRADOR
+public function update2($id = null)
+{
+    if (!$this->request->is('put') || $id == null) {
+        return redirect()->route('noticias');
+    }
 
-    public function mostrar()    {
+    $post = $this->request->getPost(['estado_borrador']);
+
+    $noticiasModel = new NoticiasModel();
+    $noticiasModel->update($id, [
+        'estado_borrador'=> $post['estado_borrador'],
+    ]);
+    return redirect()->route('noticias/mostrar');
+}
+
+public function descartar2($id=null){
+    if ($id == null) {
+        return redirect()->route('noticias');
+    }
+    $noticiasModel = new NoticiasModel();
+    $data['noticia']= $noticiasModel->find($id);
+
+    return view('estado/descartarNoticia', $data);
+}
+#MOSTRAR INDEX - TARJETA
+    public function mostrar(){
         $noticiasModel = new NoticiasModel();
         $resultado = $noticiasModel->findAll();
 
@@ -128,12 +173,11 @@ class Noticias extends BaseController
         return view('noticias/mostrar',$data);
     }
 
-    public function show($id = null){
-
-    }
-     
-    public function mostrar_noticia($id = null){
-        
+    public function mostrar_noticia($id = null)
+    {
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
         $noticiasModel = new NoticiasModel();
         $data['not'] = $noticiasModel->find($id);
         return view('mostrar/noticia_id', $data);
@@ -144,7 +188,6 @@ class Noticias extends BaseController
         $usuario = $this->request->getPost('usuario');    
         $contra = $this->request->getPost('contra');
         $tipo = $this->request->getPost('tipo');
-
        
         $ingresoModel = new IngresoModel();
 
@@ -168,19 +211,19 @@ class Noticias extends BaseController
         }
     }
 
- //ESTADO -> EDITAR
+//MOSTRAR ESTADO -> EDITAR
     public function editar()
     {
-      $db = \Config\Database::connect();
       $noticiasModel = new NoticiasModel();
-      $builder = $db->table('noticias');
-      $builder->select('noticias.*');
-      $builder->join('editar', 'editar.id = noticias.id', 'left');
-      $builder->where('editar.id IS NULL OR noticias.id IS NULL');
-      
-     $noticias['noticias'] = $builder->get()->getResultArray();
+      $noticias['noticias'] = $noticiasModel->mostrarEditarNoticias();     
 
-        return view('estado/editar',$noticias);
+      $editarModel = new EditarModel();
+      $noticias['editar'] = $editarModel->mostrarEditarNoticias(); 
+      
+      $editarModel2 = new EditarModel2();
+      $noticias['editar2'] = $editarModel2->mostrarEditarNoticias();
+
+      return view('estado/editar', $noticias );
     }
 
     public function edit($id = null ){
@@ -194,13 +237,7 @@ class Noticias extends BaseController
         return view('estado/editar2', $data);
     }
 
-
-    public function delete($id = null)
-    {
-        //
-    }
-
-//Formularios
+//FORMULARIOS
     public function ingreso(){
         return view('noticias/ingreso');
     }
@@ -209,65 +246,116 @@ class Noticias extends BaseController
         return view('noticias/recuperar_contra');
     }
 
-#Categorias
+#CATEGORIAS
     public function economia(){
         $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
+        $noticias['noticias'] = $noticiasModel->mostrarIndex();
 
-        $data = ['noticias' => $resultado];
-        return view('/categorias/economia',$data);
+        $editarModel = new EditarModel();
+        $noticias['editar']= $editarModel->mostrarIndex();
+
+        return view('/categorias/economia',$noticias);
     }
 
     public function politica(){
         $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
+        $noticias['noticias'] = $noticiasModel->mostrarIndex();
 
-        $data = ['noticias' => $resultado];
-        return view('/categorias/politica',$data);
+        $editarModel = new EditarModel();
+        $noticias['editar']= $editarModel->mostrarIndex();
+        return view('/categorias/politica',$noticias);
     }
 
     public function turismo(){
         $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
+        $noticias['noticias'] = $noticiasModel->mostrarIndex();
 
-        $data = ['noticias' => $resultado];
-        return view('/categorias/turismo' ,$data);
+        $editarModel = new EditarModel();
+        $noticias['editar']= $editarModel->mostrarIndex();
+
+        return view('/categorias/turismo',$noticias);
     }
+
     public function deporte(){
         $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
+        $noticias['noticias'] = $noticiasModel->mostrarIndex();
 
-        $data = ['noticias' => $resultado];
-        return view('/categorias/deporte' ,$data);
+        $editarModel = new EditarModel();
+        $noticias['editar']= $editarModel->mostrarIndex();
+
+        return view('/categorias/deporte',$noticias);
     }
 
 #HISTORIAL
     public function historial($id = null){
+        if ($id == null) {
+            return redirect()->route('noticias');
+        }
 
-        $noticiasModel = new NoticiasModel();
+       $noticiasModel = new NoticiasModel();
+       $noticias['noticias'] = $noticiasModel->mostrarHistorial($id);     
 
-        $data['not'] = $noticiasModel->find($id);
-        return view('/mostrar/historial', $data);
+       $editarModel = new EditarModel();
+       $noticias['editar'] = $editarModel->mostrarHistorialEditada($id); 
+
+       $editarModel2 = new EditarModel2();
+       $noticias['editar2'] = $editarModel2->mostrarHistorialEditada2($id); 
+
+       $corregirModel = new CorregirModel();
+       $noticias['correccion'] = $corregirModel->mostrarHistorialCorregir($id); 
+       
+        return view('/mostrar/historial', $noticias);
     }
     
-    /*
-    public function original( ){
-        return view('mostrar/original');
-    }*/
 
     public function validar(){
         $noticiasModel = new NoticiasModel();
-        $resultado = $noticiasModel->findAll();
-
-        $data = ['noticias' => $resultado];
-        return view('/estado/validar', $data);
+        $noticias['noticias'] = $noticiasModel->mostrarValidar();     
+  
+        $editarModel = new EditarModel();
+        $noticias['editar'] = $editarModel->mostrarValidar(); 
+        
+        $editarModel2 = new EditarModel2();
+        $noticias['editar2'] = $editarModel2->mostrarValidar();
+  
+        return view('/estado/validar', $noticias);
     }
 
-//Cerrar sesion
+//CERRAR SESION
     public function salir() {
 		$session = session();
         $session->destroy();
         return redirect()->to(base_url('noticias'));
-	}
+	}    
 
+#EVENTO SQL
+
+public function activar($idEvento) {
+    $noticiasModel = new NoticiasModel();
+   $noticiasModel->activarEvento($idEvento); 
+}
+
+#DESHACER
+public function deshacer_cambios() {
+    // Iniciar una transacción
+    $db = db_connect();
+   $builer= $this->$db->trans_start();
+
+    // Realizar las operaciones de deshacer (puede ser una o más consultas SQL)
+    $algo_salio_mal = false;
+
+    // Si ocurre algún error, revertir la transacción
+    if ($algo_salio_mal) {
+        $builer->trans_rollback(); // Deshace los cambios
+        echo "Los cambios no se pudieron deshacer.";
+    } else {
+        $builer->trans_commit(); // Confirma los cambios
+        echo "Los cambios se han deshecho correctamente.";
+    }
+}
+    public function show($id = null){
+    }
+
+    public function delete($id = null){
+    }
 }

@@ -9,13 +9,13 @@ class IngresoModel extends Model{
 			$Usuario->where($data);
 			return $Usuario->get()->getResultArray();
    }
-
+/*
    public function mostrarTodo(){
     $noticiasModel = new NoticiasModel();
     $resultado = $noticiasModel->findAll();
     $data = ['noticias' => $resultado];
     return $data;
    }
-   
+*/ 
 }
 ?>

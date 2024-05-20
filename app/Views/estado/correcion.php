@@ -8,14 +8,11 @@
 <!-- PERFIL EDITOR -->            
 <div class="container text-center">
   <div class="row">
-  <div class="col">
+    <div class="col">
       <a class="btn btn-primary" href="<?php echo base_url('noticias/mostrar')?>" role="button">HISTORIAL</a>
     </div> 
     <div class="col">
       <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
-    </div>
-    <div class="col">
-        <a class="btn btn-primary" href="<?php echo base_url('/estado/borrador')?>" role="button">BORRADOR</a>
     </div>
   </div>
 </div>
@@ -25,6 +22,9 @@
  <!-- PERFIL VALIDADOR -->
  <div class="container text-center">
   <div class="row">
+    <div class="col">
+      <a class="btn btn-primary" href="<?php echo base_url('noticias/mostrar')?>" role="button">HISTORIAL</a>
+    </div> 
     <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/validar')?>" role="button">VALIDAR</a>
     </div>
@@ -37,10 +37,10 @@
   <div class="container text-center">
   <div class="row">
     <div class="col">
-      <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
-    </div>
+      <a class="btn btn-primary" href="<?php echo base_url('noticias/mostrar')?>" role="button">HISTORIAL</a>
+    </div> 
     <div class="col">
-        <a class="btn btn-primary" href="<?php echo base_url('/estado/correcion')?>" role="button">CORRECI&OacuteN</a>
+      <a class="btn btn-primary" href="<?php echo base_url('/estado/editar')?>" role="button">EDITAR</a>
     </div>
     <div class="col">
         <a class="btn btn-primary" href="<?php echo base_url('/estado/validar')?>" role="button">VALIDAR</a>
@@ -58,7 +58,7 @@
 <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
     <thead class="table-dark">
         <tr>
-        <th scope="col">ID</th>
+            <th scope="col">ID</th>
             <th scope="col">Titulo</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Categoria</th>
@@ -70,21 +70,54 @@
     <tbody>
     <?php if($_SESSION['rol']=='Editor'){
        foreach ($noticias as $not) : 
-          if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado_modificado']=='correcion')) {
+          if( $not['usuario'] == $_SESSION['usuario'] && ($not['estado_modificado']=='correccion')) {
         ?>
             <tr>
-            <td><?= $not['id']; ?></td>
-                <td><?= $not['titulo']; ?></td>
-                <td><?= $not['descripcion']; ?></td>
-                <td><?= $not['categoria']; ?></td>
-                <td><?= $not['img']; ?></td>
+              <td><?= $not['id']; ?></td>
+              <td><?= $not['titulo']; ?></td>
+              <td><?= $not['descripcion']; ?></td>
+              <td><?= $not['categoria']; ?></td>
+              <td><?= $not['img']; ?></td>
             
-                <td>                  
-                    <a href="<?php echo base_url('editar/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2"> CORREGIR</a>
-                </td>
+              <td>                  
+                <a href="<?php echo base_url('editar/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2"> CORREGIR</a>
+              </td>
             </tr>
         <?php }
        endforeach; 
+      }else if($_SESSION['rol']!='Editor'){
+       foreach ($noticias as $not) : 
+          if(($not['estado_modificado']=='correccion')) {
+        ?>
+            <tr>
+              <td><?= $not['id']; ?></td>
+              <td><?= $not['titulo']; ?></td>
+              <td><?= $not['descripcion']; ?></td>
+              <td><?= $not['categoria']; ?></td>
+              <td><?= $not['img']; ?></td>
+            
+              <td>                  
+                <a href="<?php echo base_url('editar/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2"> CORREGIR</a>
+              </td>
+            </tr>
+        <?php }
+       endforeach; 
+       foreach ($editar as $not) : 
+        if(($not['estado_modificado']=='correccion' &&  $not['estatus']='')) {
+      ?>
+          <tr>
+            <td><?= $not['id']; ?></td>
+            <td><?= $not['titulo']; ?></td>
+            <td><?= $not['descripcion']; ?></td>
+            <td><?= $not['categoria']; ?></td>
+            <td><?= $not['img']; ?></td>
+          
+            <td>                  
+              <a href="<?php echo base_url('editar/' . $not['id']. '/edit'); ?>" class="btn btn-warning btn-sm me-2"> CORREGIR</a>
+            </td>
+          </tr>
+      <?php }
+     endforeach; 
       }
        ?>
     </tbody>
