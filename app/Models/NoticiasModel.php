@@ -65,6 +65,15 @@ public function activarEvento($idEvento) {
     $builder->update('noticias');
 }
 
+#EVENTO
+public function activarEventoAutomatico($idEvento) {
+    // Ejecutar la consulta SQL para activar el evento
+    $builder = $this->db->table('noticias');
+    $builder->set('estadoEvento', 'Activo');
+    $builder->where('id', $idEvento);
+    $builder->update('noticias');
+}
+
 #Mostrar INDEX
 public function mostrarIndex(){
     $builder = $this->db->table('noticias');

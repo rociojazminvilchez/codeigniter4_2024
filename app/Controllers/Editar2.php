@@ -7,31 +7,7 @@ use App\Models\EditarModel2;
 class Editar2 extends BaseController
 {
 
-    public function index()
-    {
-        //
-    }
 
-    public function show($id = null)
-    {
-        //
-    }
-
-
-    public function new()
-    {
-        //
-    }
-
-    public function create()
-    {
-    }
-
-
-    public function edit($id = null)
-    {
-        //
-    }
 #EDITOR -> DESCARTAR BORRADOR
     public function update($id = null)
     {
@@ -56,12 +32,6 @@ class Editar2 extends BaseController
         $data['edit']= $editarModel2->find($id);
         return view('estado/descartarEdit2', $data);
     }
-
-    public function delete($id = null)
-    {
-        //
-    }
-
     
 #ESTADO VALIDAR - PUBLICAR | DESCARTAR | CORRECION
 public function update2($id = null){

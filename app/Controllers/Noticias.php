@@ -75,7 +75,8 @@ class Noticias extends BaseController
                 'estado' => $post['estado'],
                 'categoria'         => $post['categoria'],
                 'usuario'         => $post['usuario'],
-                'img' => $imageName,  
+                'img' => $imageName, 
+    
             ]);
         }
         
@@ -335,7 +336,13 @@ public function activar($idEvento) {
    $noticiasModel->activarEvento($idEvento); 
 }
 
+public function activarAutomatico($idEvento) {
+    $noticiasModel = new NoticiasModel();
+   $noticiasModel->activarEventoAutomatico($idEvento); 
+}
+
 #DESHACER
+/*
 public function deshacer_cambios() {
     // Iniciar una transacción
     $db = db_connect();
@@ -353,9 +360,5 @@ public function deshacer_cambios() {
         echo "Los cambios se han deshecho correctamente.";
     }
 }
-    public function show($id = null){
-    }
-
-    public function delete($id = null){
-    }
+*/
 }

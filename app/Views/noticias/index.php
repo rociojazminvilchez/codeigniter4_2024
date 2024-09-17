@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row row-cols-1 row-cols-md-2 g-4">
         <?php foreach ($noticias as $not) : 
-            if($not['estado_modificado']=='publicar' && $not['estadoEvento']=='Activo'){       
+            if($not['estadoEvento']=='Activo'){       
         ?>
     
         <div class="col">
